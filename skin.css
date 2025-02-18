@@ -32,92 +32,92 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, p, .ti
 * ===================
 */
     .advs-box-top-icon .icon, .btn.btn-border, .btn-default i, .btn i, .btn-text i, .list-texts li b, .side-menu i, .accordion-list .list-group-item > a.active, .img-box.i-bottom i:before, .accordion-list .list-group-item:after, .pricing-table .pricing-price span, .btn-text, .dropdown-menu > li > a:before, .navbar-nav > li.dropdown > a:after, .nav-pills > li > a:hover, .fa-li, i.icon, .counter-inverse .icon-box-cell p, i.square, i.circle, .niche-box-testimonails > h5 span, .timeline small a.collapse-button:hover, li.panel-item .fa-li, .fullpage-menu li.active i, .fullpage-menu li.active span, .fullpage-menu li:hover i, .fullpage-menu li:hover span, .social-group i.circle, .icon-list .list-item i, .accordion-list .list-group-item > a:hover, .side-menu > li.active > a > i, .navbar-default .navbar-nav > .active > a, .adv-img-full-content p.sub {
-        color: #484848;
+        color: #444d4c;
     }
 
         .shop-menu .cart-buttons a:hover, .mi-menu ul li > a:hover, .mi-menu ul li.active > a, .mi-menu ul li > a:hover i, .mi-menu ul li.active > a i, .pricing-table .pricing-price, .list-group-item.pricing-price:hover, .nav-tabs > li:hover > a, .nav-tabs > li:hover > a i, .nav-tabs > li.active > a, .nav-tabs > li.active > a i, .list-group-item:not(.active):hover > a:not(.btn), header .btn-search:hover, .nav.ms-minimal > li.active > a, .icon-background.boxed-inverse:not(.bg-color) .i-background, .icon-box-cell > i, .advs-box.boxed a.btn, .advs-box.boxed a i, .dropdown.btn-group .active > a, .bootgrid-header .dropdown-item:hover, .white .box-side-icon-small .icon-box i, .btn-text:hover, .advs-box-top-icon.boxed-inverse .icon, .advs-box-top-icon.boxed .btn, .footer-minimal .footer-title, .advs-box-top-icon.boxed .circle-button, .white .text-color, .text-color, .boxed .circle-button:hover i, .btn-text i, .boxed .circle-button, .pagination > .active > a, .pagination > li > a:hover, .datepicker-panel > ul > li:hover, .adv-img-button-content .caption i, .social-line .social-group i.circle:hover, .white .icon-box-cell > i.square, .white .icon-box-cell > i.circle, .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li.active > a, .white .pagination > li > a:hover, .white .pagination > .active > a, .white.advs-box-blog .tag-row span:after, .white.niche-box-post .tag-row span:after {
-            color: #484848 !important;
+            color: #444d4c !important;
         }
 
 .btn-border:after, .nav-tabs > li > a:before, .advs-box-top-icon-img.boxed:not(.niche-box-post):after, .advs-box-blog.boxed:after, .timeline > li > .timeline-badge, .social-group i.circle, .social-button i.circle, .bg-color, .home-fullpage p, .home-fullpage a:hover, .timeline > li:hover > .timeline-badge, ul.side-menu li.active:before, #twosides-menu, .subline-bar, .accordion-list .list-group-item:before, .advs-box-multiple div.circle, .box-social-page, .btn, .circle-button .navbar-inner .nav:not(.ms-rounded) li a:before, .timeline > li:hover > .timeline-badge {
-    background-color: #484848;
+    background-color: #444d4c;
 }
 
 [class*="col-md-"].boxed, .fa-angle-up.scroll-top, .call-action-box, .ul-dots li:before, .flex-control-paging li a.flex-active, .header-bootstrap, .flex-control-paging li a:hover, .progress-bar, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default, .adv-img-half-content .sub-text, .ot-dtp-picker .ot-dtp-picker-button:hover {
-    background-color: #2e2e2e !important;
+    background-color: #1e4e1e !important;
 }
 
 .niche-box-testimonails-cloud.box-black p {
-    background-color: #484848 !important;
+    background-color: #444d4c !important;
 }
 
 .white .btn:not(.btn-border), .nav.inner.ms-rounded li a, .nav-pills > li > a {
-    background-color: #484848 !important;
-    border-color: #484848 !important;
+    background-color: #444d4c !important;
+    border-color: #444d4c !important;
 }
 
     .btn:not(.btn-border):hover, .white .btn:not(.btn-border):hover, .nav.inner.ms-rounded li a:hover, .nav-pills > li > a:hover, .nav-pills > li.active > a, .advs-box.boxed, [class*="col-md-"].boxed {
-        background-color: #2e2e2e !important;
-        border-color: #2e2e2e !important;
+        background-color: #1e4e1e !important;
+        border-color: #1e4e1e !important;
     }
 
 div.adv-img-side-content .btn:hover, .nav-pills > li.active > a, .list-items .list-item span, div.adv-img-side-content .btn:hover i, .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
-    border-color: #2e2e2e !important;
-    color: #2e2e2e !important;
+    border-color: #1e4e1e !important;
+    color: #1e4e1e !important;
 }
 
 .ot-dtp-picker .ot-dtp-picker-button {
-    background-color: #484848 !important;
-    box-shadow: 0 0 0 1px #484848 !important;
+    background-color: #444d4c !important;
+    box-shadow: 0 0 0 1px #444d4c !important;
 }
 
 .niche-box-post.boxed .block-infos {
-    border-color: #484848 !important;
+    border-color: #444d4c !important;
 }
 
 .circle-button, .btn-border, .btn, .social-group i.circle, .social-button i.circle {
-    border-color: #484848;
+    border-color: #444d4c;
 }
 
 .tab-box > .panel, .niche-box-team .content-box hr, hr.e, .datepicker-top-left, .datepicker-top-right {
-    border-top-color: #484848 !important;
+    border-top-color: #444d4c !important;
 }
 
 .title-base.text-left p .img-box.adv-img-half-content .caption {
-    border-left-color: #484848 !important;
+    border-left-color: #444d4c !important;
 }
 
 .list-items .list-item:hover, .title-modern h2, .tab-box.inverse .panel, .datepicker-top-left:before, .datepicker-top-right:before, .navbar .nav > li.active {
-    border-bottom-color: #484848 !important;
+    border-bottom-color: #444d4c !important;
 }
 
 
 .subline-bar li:hover, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .btn:hover {
-    background-color: #2e2e2e !important;
+    background-color: #1e4e1e !important;
 }
 
 .white .btn-border:hover {
-    color: #2e2e2e !important;
+    color: #1e4e1e !important;
 }
 
 .btn-border:hover {
-    color: #2e2e2e;
-    border-color: #2e2e2e !important;
+    color: #1e4e1e;
+    border-color: #1e4e1e !important;
 }
 
 .advs-box-top-icon.boxed .icon {
-    background-color: #2e2e2e !important;
-    border-color: #2e2e2e !important;
+    background-color: #1e4e1e !important;
+    border-color: #1e4e1e !important;
 }
 
 .btn:hover, body div .btn.white:hover, .nav.ms-minimal > li.active > a, .nav.ms-minimal > li:hover > a {
-    border-color: #2e2e2e !important;
+    border-color: #1e4e1e !important;
 }
 
 
 @media (max-width: 992px) {
     header.bg-transparent .navbar-default .navbar-nav > li.active > a {
-        color: #484848 !important;
+        color: #444d4c !important;
     }
 }
 
@@ -129,7 +129,7 @@ div.adv-img-side-content .btn:hover, .nav-pills > li.active > a, .list-items .li
 */
 
 h1, .h1, h2, .h2, h3, .h3, h4, h5, h6, .icon-box.text-bold label, .countdown .countdown-values, .icon-box-cell label, .white .ot-dtp-picker-selector-link {
-    color: #484848;
+    color: #444d4c;
 }
 
 a {
@@ -574,7 +574,7 @@ input {
     left: -15px;
     font-size: 19px;
     font-weight: 600;
-    background-color: #2e2e2e;
+    background-color: #1e4e1e;
 }
 
 .section-slider.side-paddings .section-slide .container {
@@ -945,7 +945,7 @@ i.cover, i.onlycover {
 }
 
 .btn-group-icons:not(.social-colors) i {
-    color: #484848;
+    color: #444d4c;
 }
 
 .btn-group-icons a:hover i {
@@ -1520,7 +1520,7 @@ header .navbar-nav li li:hover {
     margin-left: 43px;
 }
 header.bg-transparent input.form-control {
-     color: #484848;
+     color: #444d4c;
 }
 .mi-menu .sidebar-nav {
     border: none;
@@ -2650,7 +2650,7 @@ body .niche-box-post .block-infos {
 }
 
 .niche-box-blog .block-infos p {
-    color: #2e2e2e;
+    color: #1e4e1e;
 }
 
     .niche-box-blog .block-infos p.bd-day {
