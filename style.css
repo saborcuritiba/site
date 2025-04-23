@@ -463,13 +463,6 @@ HEADER MENU
 ==============================
 */
 
-.logo-sabor-curitiba{/*Ajuste Tamanho da LOGO*/
-    padding: 1px !important;
-    padding-left: 15px !important;
-}
-
-
-
 header {
     line-height: 1.42857143;
     z-index: 995;
