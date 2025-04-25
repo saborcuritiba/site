@@ -696,16 +696,16 @@ body .block-quote.quote-1:before, body .block-quote.quote-2:after, body .block-q
 }
 
 .footer-parallax {
-    height: 380px;
+    height: 580px;
     border-top: none;
 }
 
 .footer-parallax-container {
-    margin-bottom: 378px;
+    margin-bottom: 578px;
 }
 
 .footer-parallax .container {
-    min-height: 310px;
+    min-height: 510px;
 }
 
 .footer-parallax .copy-text, footer .social-group {
