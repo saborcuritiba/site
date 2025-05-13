@@ -1,0 +1,78 @@
+{
+  "empresa": {
+    "nome": "Sabor Curitiba",
+    "slogan": "Estamos sempre prontos para te atender",
+    "descricao": "Na Sabor Curitiba, fazemos comida de verdade: marmitas congeladas preparadas com ingredientes orgânicos e o melhor sabor da cidade. Usamos embalagens biodegradáveis e cuidamos de cada etapa para evitar o desperdício. É mais do que praticidade — é sabor, consciência e carinho em cada refeição."
+  },
+  "categorias": [
+    {
+      "nome": "Linha Dia a Dia",
+      "produtos": [
+        {
+          "nome": "Sobrecoxa de frango com creme de milho e arroz com brócolis",
+          "preco": 27.00,
+          "descricao": "Frango suculento servido com creme de milho cremoso e arroz nutritivo com brócolis.",
+          "disponivel": true
+        },
+        {
+          "nome": "Filé mignon suíno com tempero oriental, purê de batata salsa e legumes",
+          "preco": 26.00,
+          "descricao": "Filé mignon suíno temperado à moda oriental, acompanhado de purê de batata salsa e legumes frescos.",
+          "disponivel": true
+        },
+        {
+          "nome": "Almôndega de carne com macarrão fusilli",
+          "preco": 30.00,
+          "descricao": "Almôndegas de carne suculentas servidas com macarrão fusilli e molho especial.",
+          "disponivel": true
+        },
+        {
+          "nome": "Picadinho de carne com arroz, feijão e farofa",
+          "preco": 25.00,
+          "descricao": "Carne picada cozida lentamente, acompanhada de arroz soltinho, feijão caseiro e farofa crocante.",
+          "disponivel": true
+        }
+      ]
+    },
+    {
+      "nome": "Vegetarianas",
+      "produtos": [
+        {
+          "nome": "Risoto Funghi ou Caprese - Vegetariano",
+          "preco": 23.00,
+          "descricao": "Risoto cremoso, disponível nas opções Funghi ou Caprese, perfeito para uma refeição sofisticada e nutritiva.",
+          "disponivel": true
+        },
+        {
+          "nome": "Strogonoff Vegano",
+          "preco": 25.00,
+          "descricao": "Uma versão vegana do clássico strogonoff, preparado com proteína vegetal e um molho cremoso delicioso.",
+          "disponivel": true
+        },
+        {
+          "nome": "Feijão tropeiro vegetariano",
+          "preco": 24.00,
+          "descricao": "Feijão tropeiro preparado sem carne, enriquecido com legumes frescos e tofu grelhado.",
+          "disponivel": true
+        }
+      ]
+    },
+    {
+      "nome": "Congeladas",
+      "produtos": [
+        {
+          "nome": "Carne moída com legumes e purê de batata",
+          "preco": 30.00,
+          "descricao": "Delicioso Carne moída com legumes e purê de batata",
+          "disponivel": true
+        },
+        {
+          "nome": "Frango ao limão Siciliano, batata doce corada e legumes",
+          "preco": null,
+          "descricao": "Delicioso Frango ao limão Siciliano, batata doce corada e legumes",
+          "disponivel": false
+        }
+      ]
+    }
+  ]
+}
