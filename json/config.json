@@ -23,6 +23,11 @@
             "tarde": "Boa tarde! Seja bem-vindo à Sabor Curitiba. Como posso te ajudar hoje?",
             "noite": "Boa noite! Seja bem-vindo à Sabor Curitiba. Como posso te ajudar hoje?"
         },
+        "regras_horario": {
+            "manha": "05:00-11:59",
+            "tarde": "12:00-17:59",
+            "noite": "18:00-04:59"
+        },
         "instrucoes": [
             "Sempre identificar o horário e usar a saudação correta",
             "Ser direto, educado e profissional",
@@ -54,12 +59,28 @@
                     "obrigatorio": true
                 },
                 {
+                    "nome": "itens",
+                    "descricao": "Lista de marmitas do pedido",
+                    "obrigatorio": true,
+                    "estrutura": [
+                        {
+                            "marmita": "Nome exato do produto conforme CARDAPIO",
+                            "quantidade": "Quantidade solicitada"
+                        }
+                    ]
+                },
+                {
+                    "nome": "valor_total",
+                    "descricao": "Valor total do pedido (somatório dos itens + entrega, se aplicável)",
+                    "obrigatorio": true
+                },
+                {
                     "nome": "observacoes",
                     "descricao": "Observações do pedido",
                     "obrigatorio": false
                 }
             ],
-            "mensagem_coleta_informacoes": "Ótima escolha! Para finalizar seu pedido, preciso de algumas informações: nome, endereço completo, forma de pagamento e telefone ou WhatsApp para contato. Se tiver alguma observação, pode informar também.",
+            "mensagem_coleta_informacoes": "Ótima escolha! Para finalizar seu pedido, preciso de algumas informações: nome, endereço completo, forma de pagamento e telefone ou WhatsApp para contato. Também me informe quais marmitas deseja e a quantidade de cada uma. Se tiver alguma observação, pode me informar também.",
             "mensagem_confirmacao": "Perfeito! Seu pedido foi encaminhado para nossa equipe de vendas. Agora é só aguardar que entraremos em contato para agendar a entrega."
         },
         "sac": {
@@ -116,11 +137,11 @@
             "cidades": [
                 {
                     "nome": "Pinhais",
-                    "regra": "Taxa de entrega fixa de R$ 25,00, independentemente da quantidade de marmitas."
+                    "regra": "Taxa de entrega fixa de R$ 25,00"
                 },
                 {
                     "nome": "Campo Largo",
-                    "regra": "Taxa de entrega fixa de R$ 25,00, independentemente da quantidade de marmitas."
+                    "regra": "Taxa de entrega fixa de R$ 25,00"
                 }
             ]
         },
