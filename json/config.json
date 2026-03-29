@@ -1,0 +1,130 @@
+{
+    "empresa": {
+        "nome": "Sabor Curitiba",
+        "slogan": "Comida de Verdade",
+        "descricao": "Na Sabor Curitiba, fazemos comida de verdade: marmitas congeladas preparadas com ingredientes frescos e o melhor sabor da cidade. Utilizamos embalagens biodegradáveis e cuidamos de cada etapa para evitar desperdícios. Mais do que praticidade, entregamos sabor, consciência e carinho em cada refeição.",
+        "quem_somos": "Somos uma marmitaria especializada em marmitas congeladas, com foco em sabor e nutrição. Trabalhamos sempre com ingredientes frescos e de alta qualidade. Estamos localizados em Curitiba, no bairro Ganchinho, e atendemos exclusivamente por delivery próprio, sem atendimento presencial.",
+        "diferenciais": [
+            "Ingredientes frescos e selecionados",
+            "Comida caseira com padrão de qualidade",
+            "Embalagens biodegradáveis",
+            "Produção com foco em redução de desperdício",
+            "Entrega própria em Curitiba e região"
+        ],
+        "modelo_atendimento": {
+            "tipo": "Delivery",
+            "presencial": false
+        },
+        "site": "https://www.saborcuritiba.com.br"
+    },
+    "atendimento": {
+        "saudacao_por_horario": {
+            "manha": "Bom dia! Seja bem-vindo à Sabor Curitiba. Como posso te ajudar hoje?",
+            "tarde": "Boa tarde! Seja bem-vindo à Sabor Curitiba. Como posso te ajudar hoje?",
+            "noite": "Boa noite! Seja bem-vindo à Sabor Curitiba. Como posso te ajudar hoje?"
+        },
+        "instrucoes": [
+            "Sempre identificar o horário e usar a saudação correta",
+            "Ser direto, educado e profissional",
+            "Evitar respostas genéricas",
+            "Ir direto ao ponto se o cliente já foi saudado"
+        ]
+    },
+    "formularios": {
+        "pedido": {
+            "campos": [
+                {
+                    "nome": "nome",
+                    "descricao": "Nome do cliente",
+                    "obrigatorio": true
+                },
+                {
+                    "nome": "telefone",
+                    "descricao": "Telefone ou WhatsApp",
+                    "obrigatorio": true
+                },
+                {
+                    "nome": "endereco",
+                    "descricao": "Endereço completo para entrega",
+                    "obrigatorio": true
+                },
+                {
+                    "nome": "pagamento",
+                    "descricao": "Forma de pagamento",
+                    "obrigatorio": true
+                },
+                {
+                    "nome": "observacoes",
+                    "descricao": "Observações do pedido",
+                    "obrigatorio": false
+                }
+            ],
+            "mensagem_coleta_informacoes": "Ótima escolha! Para finalizar seu pedido, preciso de algumas informações: nome, endereço completo, forma de pagamento e telefone ou WhatsApp para contato. Se tiver alguma observação, pode informar também.",
+            "mensagem_confirmacao": "Perfeito! Seu pedido foi encaminhado para nossa equipe de vendas. Agora é só aguardar que entraremos em contato para agendar a entrega."
+        },
+        "sac": {
+            "campos": [
+                {
+                    "nome": "nome",
+                    "descricao": "Nome do cliente",
+                    "obrigatorio": true
+                },
+                {
+                    "nome": "telefone",
+                    "descricao": "Telefone ou WhatsApp",
+                    "obrigatorio": true
+                },
+                {
+                    "nome": "email",
+                    "descricao": "E-mail para retorno",
+                    "obrigatorio": false
+                },
+                {
+                    "nome": "tipo",
+                    "descricao": "Tipo da solicitação",
+                    "opcoes": [
+                        "Dúvida",
+                        "Reclamação",
+                        "Sugestão"
+                    ],
+                    "obrigatorio": true
+                },
+                {
+                    "nome": "descricao",
+                    "descricao": "Descrição do relato do cliente",
+                    "obrigatorio": true
+                }
+            ],
+            "mensagem_coleta_informacoes": "Para registrar sua solicitação, preciso de algumas informações: nome, telefone ou WhatsApp, tipo da solicitação (Dúvida, Reclamação ou Sugestão) e a descrição do ocorrido. Se quiser, pode informar também um e-mail para retorno.",
+            "mensagem_confirmacao": "Sua mensagem foi enviada ao nosso SAC. Nossa equipe analisará e te responderá em até 5 dias úteis."
+        }
+    },
+    "entrega": {
+        "ativa": true,
+        "cidades_padrao": [
+            "Curitiba",
+            "Fazenda Rio Grande",
+            "São José dos Pinhais"
+        ],
+        "taxas_padrao": [
+            "Até 5 marmitas: R$ 20,00",
+            "De 6 a 10 marmitas: R$ 15,00",
+            "Acima de 10 marmitas: entrega gratuita"
+        ],
+        "outras_cidades": {
+            "descricao": "Para algumas cidades, as condições de entrega são diferentes.",
+            "cidades": [
+                {
+                    "nome": "Pinhais",
+                    "regra": "Taxa de entrega fixa de R$ 25,00, independentemente da quantidade de marmitas."
+                },
+                {
+                    "nome": "Campo Largo",
+                    "regra": "Taxa de entrega fixa de R$ 25,00, independentemente da quantidade de marmitas."
+                }
+            ]
+        },
+        "mensagem": "Realizamos entregas em Curitiba, São José dos Pinhais e Fazenda Rio Grande, com taxa conforme a quantidade de marmitas. Para Pinhais e Campo Largo, a taxa de entrega é fixa de R$ 25,00.",
+        "regra_geral": "Se a cidade informada não estiver listada, informe que é necessário verificar a disponibilidade de entrega."
+    }
+}

@@ -1,0 +1,77 @@
+{
+  "promocoes": [
+    {
+      "nome": "Frete grátis",
+      "descricao": "Entrega gratuita para pedidos acima de 10 marmitas.",
+      "regras": "Válido apenas para Curitiba, Fazenda Rio Grande e São José dos Pinhais."
+    }
+  ],
+  "categorias": [
+    {
+      "nome": "Linha Dia a Dia",
+      "produtos": [
+        {
+          "nome": "Filé mignon suíno com tempero oriental, purê de batata salsa e legumes",
+          "preco": 26.00,
+          "descricao": "Filé mignon suíno temperado à moda oriental, acompanhado de purê de batata salsa e legumes frescos.",
+          "disponivel": true,
+          "link": "https://saborcuritiba.com.br/produtos/mignon-suino-oriental/",
+          "ingredientes": [
+            "Mignon suíno",
+            "Batata salsa",
+            "Abobrinha",
+            "Cenoura",
+            "Cebola",
+            "Pimentão verde",
+            "Pimentão vermelho",
+            "Pimentão amarelo",
+            "Tomate",
+            "Cogumelo shiitake",
+            "Cheiro verde",
+            "Molho shoyu",
+            "Ketchup",
+            "Vinagre",
+            "Alho",
+            "Gengibre",
+            "Mix de pimentas em grão",
+            "Tomilho",
+            "Sal",
+            "Leite",
+            "Manteiga",
+            "Azeite de oliva",
+            "Óleo de soja"
+          ],
+          "alergenicos": [
+            "Contém leite e derivados",
+            "Contém derivados de soja",
+            "Contém derivados de trigo",
+            "Contém lactose",
+            "Contém glúten"
+          ],
+          "peso": "400g"
+        },
+        {
+          "nome": "Picadinho de carne com arroz, feijão e farofa",
+          "preco": 25.00,
+          "descricao": "Carne picada cozida lentamente, acompanhada de arroz soltinho, feijão caseiro e farofa crocante.",
+          "disponivel": true,
+          "link": "https://www.saborcuritiba.com.br/produto/picadinho-de-carne",
+          "ingredientes": [
+            "Carne bovina",
+            "Arroz",
+            "Feijão",
+            "Farofa",
+            "Alho",
+            "Cebola",
+            "Óleo",
+            "Sal"
+          ],
+          "alergenicos": [
+            "Pode conter glúten"
+          ],
+          "peso": "400g"
+        }
+      ]
+    }
+  ]
+}
