@@ -12,7 +12,7 @@
       "produtos": [
         {
           "nome": "Filé mignon suíno com tempero oriental, purê de batata salsa e legumes",
-          "preco": 26.00,
+          "preco": 22.90,
           "descricao": "Filé mignon suíno temperado à moda oriental, acompanhado de purê de batata salsa e legumes frescos.",
           "disponivel": true,
           "link": "https://saborcuritiba.com.br/produtos/mignon-suino-oriental/",
@@ -51,8 +51,8 @@
           "peso": "400g"
         },
         {
-          "nome": "Picadinho de carne com arroz, feijão e farofa",
-          "preco": 25.00,
+          "nome": "Picadinho de carne ao vinho com arroz, feijão e farofa",
+          "preco": 24.90,
           "descricao": "Carne picada cozida lentamente, acompanhada de arroz soltinho, feijão caseiro e farofa crocante.",
           "disponivel": true,
           "link": "https://www.saborcuritiba.com.br/produto/picadinho-de-carne",
@@ -69,7 +69,7 @@
           "alergenicos": [
             "Pode conter glúten"
           ],
-          "peso": "400g"
+          "peso": "350g"
         }
       ]
     }
