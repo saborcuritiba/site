@@ -210,65 +210,121 @@
       <div class="section-bg-color">
         <div class="container content">
           <div class="row">
-            <div class="col-md-6">
+            <!-- COLUNA DOS TEXTOS: No HTML vem primeiro para aparecer no topo do celular, mas no PC é empurrada para a direita -->
+            <div class="col-md-6 col-md-push-6">
+              <div class="title-base text-left">
+                <hr class="hidden-xs hidden-sm" />
+                <!-- Esconde o traço repetido no mobile -->
+                <h2>Mignon Suíno Oriental</h2>
+                <p>Linha Dia a Dia</p>
+              </div>
+
+              <p>
+                Delicioso mignon suíno preparado ao molho oriental, com shoyu,
+                alho e gengibre, que proporcionam um sabor marcante, equilibrado
+                e levemente adocicado.
+              </p>
+
+              <p>
+                Acompanha um cremoso purê de batata salsa e uma seleção de
+                legumes salteados, trazendo textura, cor e ainda mais sabor ao
+                prato.
+              </p>
+
+              <p>
+                Uma refeição completa, prática e nutritiva, ideal para quem
+                busca qualidade e conveniência sem abrir mão de uma excelente
+                experiência gastronômica.
+              </p>
+
+              <hr class="space s" />
+
+              <!-- PREÇO E WHATSAPP LADO A LADO -->
+              <div
+                class="row"
+                style="display: flex; align-items: center; flex-wrap: wrap"
+              >
+                <div class="col-xs-6 col-sm-5 text-right">
+                  <h3 class="text-bold" style="margin: 0; padding: 10px 0">
+                    R$ 22,90
+                  </h3>
+                </div>
+
+                <div class="col-xs-6 col-sm-7">
+                  <div
+                    class="advs-box advs-box-top-icon"
+                    data-anima="scale-up"
+                    data-trigger="hover"
+                    onclick="
+                      window.open('https://wa.me/5541998401944', '_blank')
+                    "
+                    style="
+                      cursor: pointer;
+                      display: inline-block;
+                      margin: 0;
+                      padding: 10px 15px;
+                      text-align: left;
+                    "
+                  >
+                    <img
+                      class="icon anima"
+                      src="../../images/whatsapp-svgrepo-com.svg"
+                      width="30"
+                      height="30"
+                      alt="WhatsApp"
+                      style="
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 8px;
+                      "
+                    />
+                    <div style="display: inline-block; vertical-align: middle">
+                      <h3 style="font-size: 14px; margin: 0; font-weight: bold">
+                        Compre agora!
+                      </h3>
+                      <p style="margin: 0; font-size: 12px">
+                        <a
+                          href="https://wa.me/5541998401944"
+                          style="color: inherit"
+                          >(41) 99840-1944</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Espaçador visível apenas no celular para separar o bloco do botão antes de começar a foto -->
+              <hr class="space m visible-xs visible-sm" />
+            </div>
+
+            <!-- COLUNA DA IMAGEM E TAGS: No HTML vem depois, mas no PC é puxada para a esquerda -->
+            <div class="col-md-6 col-md-pull-6">
               <img
                 src="images/principal.jpg"
                 alt="Mignon Suíno Oriental"
                 class="img-responsive"
               />
-            </div>
 
-            <div class="col-md-6">
-              <div class="title-base text-left">
-                <hr />
-                <h2>Mignon Suíno Oriental</h2>
-                <p>370g</p>
+              <!-- LINHA EXCLUSIVA DAS TAGS: Ocupa a largura total no PC e fica abaixo da foto no celular -->
+              <div class="row">
+                <div class="col-md-12" style="clear: both; width: 100%">
+                  <hr class="space s" />
+                  <div class="tagbox">
+                    <span>32g de Proteína</span>
+                    <span>370g</span>
+                    <span>Ingredientes Simples</span>
+                    <span>Pronta em 5 Minutos*</span>
+                    <span>Refeição Completa</span>
+                    <span>Tempero Caseiro</span>
+                  </div>
+                </div>
               </div>
-
-              <p>
-                Delicioso mignon suíno preparado ao molho oriental com shoyu,
-                alho e gengibre, trazendo um sabor marcante e equilibrado.
-              </p>
-
-              <p>
-                Acompanha purê cremoso de batata salsa e legumes salteados,
-                formando uma refeição completa, saborosa e prática para o dia a
-                dia.
-              </p>
-
-              <hr class="space s" />
-
-              <h3 class="text-bold">R$ 21,90</h3>
             </div>
           </div>
         </div>
       </div>
       <!-- FIM SESSAO APRESENTACAO PRODUTO -->
-
-      <!-- INICIO SESSAO COMPRE AGORA -->
-      <div class="section-bg-color">
-        <div class="container content">
-          <div class="title-base">
-            <hr />
-            <h3>Acesse nossa central de pedidos</h3>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="text-center">
-                <a
-                  href="https://wa.me/5541998401944?text=Olá%2C%20quero%20comprar%20o%20Mignon%20Suíno%20Oriental%20com%20purê%20de%20batata%20salsa."
-                  target="_blank"
-                  class="btn btn-default btn-lg"
-                >
-                  Comprar pelo WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- FIM SESSAO COMPRE AGORA -->
 
       <!-- INICIO SESSAO BENEFICIOS EMBALAGEM -->
       <div class="section-empty">
@@ -281,9 +337,7 @@
                 data-trigger="hover"
               >
                 <i class="im-leafs icon anima"></i>
-
                 <h3>BPA-Free</h3>
-
                 <p>
                   Embalagem livre de Bisfenol A, trazendo mais segurança para
                   sua alimentação.
@@ -298,11 +352,10 @@
                 data-trigger="hover"
               >
                 <i class="im-recycling-2 icon anima"></i>
-
                 <h3>Embalagem Biodegradável</h3>
-
                 <p>
-                  Material sustentável, resistente e próprio para micro-ondas.
+                  Material sustentável e resistente, próprio para uso em
+                  micro-ondas, forno convencional e Airfryer.
                 </p>
               </div>
             </div>
@@ -314,9 +367,7 @@
                 data-trigger="hover"
               >
                 <i class="im-plant icon anima"></i>
-
                 <h3>Ingredientes Naturais</h3>
-
                 <p>
                   Ingredientes frescos e selecionados para garantir mais sabor e
                   qualidade.
@@ -331,11 +382,10 @@
                 data-trigger="hover"
               >
                 <i class="im-chef-hat icon anima"></i>
-
                 <h3>Tempero Caseiro</h3>
-
                 <p>
-                  Receitas elaboradas com sabor artesanal e preparo cuidadoso.
+                  Receitas preparadas com cuidado, ingredientes selecionados e
+                  aquele toque especial da comida caseira.
                 </p>
               </div>
             </div>
@@ -347,12 +397,19 @@
                 data-trigger="hover"
               >
                 <i class="im-clock icon anima"></i>
-
-                <h3>Pronto em 5 Minutos</h3>
-
+                <h3>Pronto em 5 Minutos*</h3>
                 <p>
                   Mais praticidade para sua rotina: aqueça e aproveite sua
                   refeição.
+                  <br /><small
+                    style="
+                      display: block;
+                      margin-top: 5px;
+                      font-size: 11px;
+                      opacity: 0.8;
+                    "
+                    >*Tempo médio de aquecimento no micro-ondas.</small
+                  >
                 </p>
               </div>
             </div>
@@ -363,13 +420,11 @@
                 data-anima="scale-up"
                 data-trigger="hover"
               >
-                <i class="im-fork-and-knife icon anima"></i>
-
+                <i class="im-scale icon anima"></i>
                 <h3>Refeição Completa</h3>
-
                 <p>
-                  Combinação equilibrada entre proteína, legumes e
-                  acompanhamento.
+                  Combinação equilibrada de proteína, legumes e acompanhamentos
+                  para uma refeição prática, saborosa e nutritiva.
                 </p>
               </div>
             </div>
@@ -377,60 +432,6 @@
         </div>
       </div>
       <!-- FIM SESSAO BENEFICIOS EMBALAGEM -->
-
-      <!-- INICIO SESSAO DIFERENCIAIS PRODUTO -->
-      <div class="section-empty">
-        <div class="container content">
-          <div class="row text-center">
-            <div class="col-md-4">
-              <a href="#" class="circle-button btn btn-sm anima-button">
-                32G DE PROTEÍNA
-              </a>
-            </div>
-
-            <div class="col-md-4">
-              <a href="#" class="circle-button btn btn-sm anima-button">
-                TEMPERO ORIENTAL
-              </a>
-            </div>
-
-            <div class="col-md-4">
-              <a href="#" class="circle-button btn btn-sm anima-button">
-                SEM CONSERVANTES
-              </a>
-            </div>
-          </div>
-
-          <hr class="space s" />
-
-          <div class="row text-center">
-            <div class="col-md-3">
-              <a href="#" class="circle-button btn btn-sm anima-button">
-                PRONTO EM 5 MINUTOS
-              </a>
-            </div>
-
-            <div class="col-md-3">
-              <a href="#" class="circle-button btn btn-sm anima-button">
-                R$ 21,90
-              </a>
-            </div>
-
-            <div class="col-md-3">
-              <a href="#" class="circle-button btn btn-sm anima-button">
-                SABOR CASEIRO
-              </a>
-            </div>
-
-            <div class="col-md-3">
-              <a href="#" class="circle-button btn btn-sm anima-button">
-                370G
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- FIM SESSAO DIFERENCIAIS PRODUTO -->
 
       <!-- INICIO SESSAO INGREDIENTES -->
       <div class="section-bg-color">
