@@ -6938,3 +6938,33 @@ html.iex .side-menu.over ul ul {
 html.iex .img-box img {
     margin-top: 0 !important;
 }
+.social-group a.whatsapp-test {
+    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    vertical-align: middle;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.social-group a.whatsapp-test i {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 18px;
+    color: #444d4c;
+}
+
+.social-group a.whatsapp-test:hover {
+    background: #25d366;
+}
+
+.social-group a.whatsapp-test:hover i {
+    color: #ffffff !important;
+}
