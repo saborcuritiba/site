@@ -10,8 +10,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sabor Curitiba - Comida de Verdade.</title>
-    <meta name="description" content="Multipurpose HTML template." />
+    <title>Quem Somos | Sabor Curitiba</title>
+    <meta
+      name="description"
+      content="Quem Somos e fale conosco - Sabor Curitiba."
+    />
 
     <!-- Scripts e estilos principais -->
     <script src="scripts/jquery.min.js"></script>
@@ -29,6 +32,37 @@
     <link rel="stylesheet" href="scripts/jquery.flipster.min.css" />
     <link rel="icon" href="images/logo_BordaBranca_M.png" />
     <link rel="stylesheet" href="skin.css" />
+    <style>
+      .social-group a.whatsapp-test {
+        margin-bottom: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        vertical-align: middle;
+        transition:
+          background-color 0.25s ease,
+          color 0.25s ease;
+      }
+      .social-group a.whatsapp-test i {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-size: 18px;
+        color: #444d4c;
+      }
+      .social-group a.whatsapp-test:hover {
+        background: #25d366;
+      }
+      .social-group a.whatsapp-test:hover i {
+        color: #ffffff !important;
+      }
+    </style>
 
     <!-- Metadados adicionais para SEO e redes sociais -->
     <meta
@@ -117,7 +151,7 @@
               <div class="collapse navbar-collapse" id="main-navbar">
                 <ul class="nav navbar-nav">
                   <li><a href="index.html">Home</a></li>
-                  <li class="dropdown active">
+                  <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                       Produtos <span class="caret"></span>
                     </a>
@@ -146,7 +180,9 @@
                     </div>
                   </li>
                   <li><a href="#fale-conosco">Fale Conosco</a></li>
-                  <li><a href="quem-somos.html">Quem Somos</a></li>
+                  <li class="active">
+                    <a href="quem-somos.html">Quem Somos</a>
+                  </li>
                 </ul>
                 <div class="nav navbar-nav navbar-right"></div>
               </div>
@@ -163,7 +199,7 @@
         data-position="top"
         data-natural-height="850"
         data-natural-width="1920"
-        data-image-src="images/pratos/image-marmita-frango.jpg"
+        data-image-src="images/pratos/imagem-marmitas-carne.jpg"
       >
         <div class="container">
           <div class="container-middle">
@@ -196,272 +232,217 @@
       </div>
       <!-- FIM SESSAO HEADER PRINCIPAL -->
 
-      <!-- INICIO SESSAO MENU -->
-      <div class="section-empty no-paddings-grid">
+      <!-- INICIO SESSAO SOBRE NOS -->
+      <div id="quem-somos" class="section-empty no-padding-bottom">
         <div class="container content">
           <div class="row">
-            <!-- PRODUTO 01 -->
-            <div class="col-md-4">
-              <div
-                class="img-box adv-img adv-img-half-content"
-                data-anima="fade-left"
-                data-trigger="hover"
-              >
-                <i class="fa fa-camera-retro anima"></i>
-
-                <a
-                  href="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
-                  class="img-box lightbox anima-scale-up anima"
-                  data-lightbox-anima="show-scale"
-                >
-                  <img
-                    src="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
-                    alt="Frango na Mostarda"
-                  />
-                </a>
-
-                <div class="caption">
-                  <h2>Frango na Mostarda</h2>
-
-                  <span class="extra-content"> R$ 20,98 </span>
-
-                  <p>Frango na mostarda, arroz com brócolis e feijão.</p>
-
-                  <p class="sub">Linha Dia a Dia</p>
+            <div class="col-md-8">
+              <hr class="space s" />
+              <div class="title-base text-left">
+                <hr />
+                <h2>Quem Somos</h2>
+                <p>
+                  Somos a Sabor Curitiba, entregando refeições práticas e
+                  saborosas para quem não abre mão de comida de verdade.
+                </p>
+              </div>
+              <p>
+                Acreditamos que a alimentação do dia a dia deve ser saudável,
+                gostosa e confiável. Nossos pratos são preparados com
+                ingredientes selecionados, sem conservantes artificiais,
+                pensados para levar mais praticidade ao seu momento de refeição.
+              </p>
+              <hr class="space s" />
+              <div class="row">
+                <div class="col-md-6">
+                  <div
+                    class="advs-box advs-box-top-icon"
+                    data-anima="scale-up"
+                    data-trigger="hover"
+                  >
+                    <i class="im-chef-hat icon anima"></i>
+                    <h3>Sabor Caseiro</h3>
+                    <p>
+                      Receitas elaboradas com carinho e atenção aos sabores
+                      tradicionais.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="advs-box advs-box-top-icon"
+                    data-anima="scale-up"
+                    data-trigger="hover"
+                  >
+                    <i class="im-plant icon anima"></i>
+                    <h3>Ingredientes Frescos</h3>
+                    <p>
+                      Matérias-primas selecionadas para conservar qualidade e
+                      frescor.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <!-- PRODUTO 02 -->
             <div class="col-md-4">
-              <div
-                class="img-box adv-img adv-img-half-content"
-                data-anima="fade-left"
-                data-trigger="hover"
-              >
-                <i class="fa fa-camera-retro anima"></i>
-
-                <a
-                  href="images/pratos/918x918/marmita-migno-suino.jpg"
-                  class="img-box lightbox anima-scale-up anima"
-                  data-lightbox-anima="show-scale"
-                >
-                  <img
-                    src="images/pratos/918x918/marmita-migno-suino.jpg"
-                    alt="Mignon Suíno Oriental"
-                  />
-                </a>
-
-                <div class="caption">
-                  <h2>Mignon Suíno Oriental</h2>
-
-                  <span class="extra-content"> R$ 21,90 </span>
-
-                  <p>
-                    Mignon suíno oriental com purê de batata salsa e legumes
-                    salteados.
-                  </p>
-
-                  <p class="sub">Linha Dia a Dia</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRODUTO 03 -->
-            <div class="col-md-4">
-              <div
-                class="img-box adv-img adv-img-half-content"
-                data-anima="fade-left"
-                data-trigger="hover"
-              >
-                <i class="fa fa-camera-retro anima"></i>
-
-                <a
-                  href="images/pratos/650x650/imagem-marmita-carne2.jpg"
-                  class="img-box lightbox anima-scale-up anima"
-                  data-lightbox-anima="show-scale"
-                >
-                  <img
-                    src="images/pratos/650x650/imagem-marmita-carne2.jpg"
-                    alt="Picadinho de Carne ao Vinho"
-                  />
-                </a>
-
-                <div class="caption">
-                  <h2>Picadinho ao Vinho</h2>
-
-                  <span class="extra-content"> R$ 24,90 </span>
-
-                  <p>Picadinho de carne ao vinho com arroz, feijão e farofa.</p>
-
-                  <p class="sub">Linha Dia a Dia</p>
-                </div>
-              </div>
+              <img
+                src="images/pratos/918x918/prato-frango.jpg"
+                alt="Quem Somos Sabor Curitiba"
+              />
             </div>
           </div>
         </div>
       </div>
-      <!-- FIM SESSAO MENU -->
+      <!-- FIM SESSAO SOBRE NOS -->
 
-      <!-- INICIO SESSAO BENEFICIOS EMBALAGEM -->
+      <!-- INICIO SESSAO CONTATO RÁPIDO -->
       <div class="section-bg-color">
         <div class="container content">
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-6">
               <div
                 class="advs-box advs-box-top-icon"
                 data-anima="scale-up"
                 data-trigger="hover"
               >
-                <i class="im-leafs icon anima"></i>
-                <h3>BPA-Free</h3>
+                <img
+                  class="icon anima"
+                  src="images/whatsapp-svgrepo-com.svg"
+                  width="40"
+                  height="40"
+                  alt="WhatsApp"
+                />
+                <h3>WhatsApp</h3>
                 <p>
-                  Embalagem livre de Bisfenol A, trazendo mais segurança para
-                  sua alimentação.
+                  <a href="https://wa.me/5541998401944">+55 (41) 99840-1944</a>
                 </p>
               </div>
             </div>
-
-            <div class="col-md-2">
+            <div class="col-md-6">
               <div
                 class="advs-box advs-box-top-icon"
                 data-anima="scale-up"
                 data-trigger="hover"
               >
-                <i class="im-recycling-2 icon anima"></i>
-                <h3>Embalagem Biodegradável</h3>
-                <p>
-                  Material sustentável, resistente e próprio para micro-ondas.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="icon anima im-no-chemical">
-                  <svg
-                    viewBox="0 0 64 64"
-                    width="40"
-                    height="40"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="32" cy="32" r="28" />
-                    <line x1="12" y1="52" x2="52" y2="12" />
-                    <path d="M26 18h12" />
-                    <path
-                      d="M28 18v8l-7 16a4 4 0 0 0 4 6h14a4 4 0 0 0 4-6l-7-16v-8"
-                    />
-                    <line x1="27" y1="32" x2="37" y2="32" />
-                  </svg>
-                </i>
-
-                <h3>Sem Conservantes</h3>
-
-                <p>
-                  Refeições preparadas sem adição de conservantes artificiais.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-plant icon anima"></i>
-
-                <h3>Ingredientes Naturais</h3>
-
-                <p>
-                  Ingredientes frescos e selecionados para garantir mais sabor e
-                  qualidade.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-chef-hat icon anima"></i>
-
-                <h3>Tempero Caseiro</h3>
-
-                <p>
-                  Receitas elaboradas com sabor artesanal e preparo cuidadoso.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-clock icon anima"></i>
-
-                <h3>Pronto em 5 Minutos</h3>
-
-                <p>
-                  Mais praticidade para sua rotina: aqueça e aproveite sua
-                  refeição.
-                </p>
+                <i class="im-mail icon anima"></i>
+                <h3>E-mail</h3>
+                <p>contato@saborcuritiba.com.br</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- FIM SESSAO BENEFICIOS EMBALAGEM -->
+      <!-- FIM SESSAO CONTATO RÁPIDO -->
 
-      <!-- INICIO SESSAO SOBRE NOS -->
-      <div>
+      <!-- INICIO SESSAO FALE CONOSCO -->
+      <div id="fale-conosco" class="section-empty">
         <div class="container content">
           <div class="row">
-            <div class="col-md-6 text-center">
+            <div class="col-md-6">
               <div class="title-base">
                 <hr />
-                <h2>Sobre nós</h2>
+                <h2>Fale conosco</h2>
+                <p>
+                  Estamos disponíveis pelo WhatsApp e e-mail para pedidos e
+                  dúvidas.
+                </p>
               </div>
-              <p>
-                Acreditamos que a comida vai muito além de matar a fome, deve
-                proporcionar uma experiência completa, unindo sabor, praticidade
-                e nutrição no dia a dia. Nossas refeições são cuidadosamente
-                planejadas para oferecer equilíbrio e qualidade em cada detalhe.
-                Desde a seleção de ingredientes até a composição nutricional dos
-                pratos, tudo é pensado para garantir uma alimentação saborosa,
-                prática e confiável.
-              </p>
-              <hr class="space xs" />
-              <a href="#" class="btn-text">Saiba mais</a>
+              <div class="content-box">
+                <p>
+                  <strong>WhatsApp:</strong>
+                  <a href="https://wa.me/5541998401944">+55 (41) 99840-1944</a>
+                </p>
+                <p>
+                  <strong>E-mail:</strong>
+                  <a href="mailto:contato@saborcuritiba.com.br"
+                    >contato@saborcuritiba.com.br</a
+                  >
+                </p>
+                <hr class="space xs" />
+                <div class="btn-group social-group btn-group-icons">
+                  <a
+                    href="https://www.facebook.com/saborcuritiba/"
+                    target="_blank"
+                    title="Facebook"
+                    aria-label="Facebook"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/saborcuritibainsta"
+                    target="_blank"
+                    title="Instagram"
+                    aria-label="Instagram"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                  <a
+                    href="https://wa.me/5541998401944"
+                    target="_blank"
+                    class="whatsapp-test"
+                    title="WhatsApp"
+                    aria-label="WhatsApp"
+                    ><i class="im-phone-2"></i
+                  ></a>
+                </div>
+              </div>
             </div>
             <div class="col-md-6">
+              <div class="title-base">
+                <hr />
+                <h2>Veja nossos produtos</h2>
+                <p>Confira algumas das refeições que preparamos com carinho.</p>
+              </div>
               <div
-                class="coverflow-slider"
+                class="coverflow-slider text-center"
+                data-width="60"
                 data-options="enableMousewheel:false"
-                data-width="45"
               >
-                <ul class="slides">
+                <ul>
                   <li>
                     <a
-                      class="img-box circle lightbox thumbnail"
-                      href="images/logo_BordaBranca_M.png"
+                      class="img-box lightbox"
+                      href="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
                       data-lightbox-anima="show-scale"
                     >
-                      <span
-                        ><img src="images/logo_BordaBranca_M.png" alt=""
-                      /></span>
+                      <img
+                        src="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
+                        alt="Frango na Mostarda"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="img-box lightbox"
+                      href="images/pratos/918x918/marmita-migno-suino.jpg"
+                      data-lightbox-anima="show-scale"
+                    >
+                      <img
+                        src="images/pratos/918x918/marmita-migno-suino.jpg"
+                        alt="Mignon Suíno Oriental"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="img-box lightbox"
+                      href="images/pratos/918x918/marmita_picadinho_carne.jpg"
+                      data-lightbox-anima="show-scale"
+                    >
+                      <img
+                        src="images/pratos/918x918/marmita_picadinho_carne.jpg"
+                        alt="Picadinho ao Vinho"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="img-box lightbox"
+                      href="images/pratos/918x918/prato-verde.jpg"
+                      data-lightbox-anima="show-scale"
+                    >
+                      <img
+                        src="images/pratos/918x918/prato-verde.jpg"
+                        alt="Prato Verde"
+                      />
                     </a>
                   </li>
                 </ul>
@@ -470,111 +451,45 @@
           </div>
         </div>
       </div>
-      <!-- FIM SESSAO SOBRE NOS -->
+      <!-- FIM SESSAO FALE CONOSCO -->
 
-      <!-- INICIO SESSAO DIFERENCIAIS -->
-      <div class="section-bg-color">
+      <div class="section-empty no-padding-bottom">
         <div class="container content">
-          <div class="row">
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-biotech icon anima"></i>
-                <h3>Tecnologia com Consciência</h3>
-                <p>Inovação responsável para um futuro mais sustentável.</p>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-handshake icon anima"></i>
-                <h3>Responsabilidade Social</h3>
-                <p>Promovemos ações que impactam positivamente a comunidade.</p>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-plant icon anima"></i>
-                <h3>Tempero Caseiro</h3>
-                <p>
-                  O sabor que transforma cada refeição em uma experiência única.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-forest icon anima"></i>
-                <h3>Responsabilidade Ambiental</h3>
-                <p>
-                  Embalagens biodegradáveis, próprias para uso no forno,
-                  airfryer ou micro-ondas.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-chef-hat icon anima"></i>
-                <h3>Ingredientes Selecionados</h3>
-                <p>
-                  Escolhemos ingredientes frescos e de qualidade para garantir
-                  mais sabor em cada refeição.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div
-                class="advs-box advs-box-top-icon"
-                data-anima="scale-up"
-                data-trigger="hover"
-              >
-                <i class="im-receipt icon anima"></i>
-                <h3>Cardápio Elaborado por Nutricionista</h3>
-                <p>
-                  Nossas refeições são elaboradas para unir sabor, equilíbrio e
-                  nutrição.
-                </p>
-              </div>
-            </div>
+          <div class="title-base text-center">
+            <hr />
+            <h2>Slider de produtos</h2>
+            <p>
+              Alguns dos pratos que fazemos com ingredientes frescos e
+              saborosos.
+            </p>
           </div>
-        </div>
-      </div>
-      <!-- FIM SESSAO DIFERENCIAIS -->
-
-      <!-- INICIO SESSAO CARROSSEL IMAGENS -->
-      <div class="section-empty no-paddings">
-        <div class="content">
           <div
-            class="flexslider carousel nav-inner"
-            data-options="minWidth:120,itemMargin:0,numItems:6,controlNav:true,directionNav:false"
+            class="coverflow-slider text-center"
+            data-width="60"
+            data-options="enableMousewheel:false"
           >
-            <ul class="slides">
+            <ul>
               <li>
                 <a
                   class="img-box lightbox"
-                  href="images/pratos/918x918/prato-mignos-suino.jpg"
+                  href="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
                   data-lightbox-anima="show-scale"
                 >
                   <img
-                    src="images/pratos/918x918/prato-mignos-suino.jpg"
-                    alt=""
+                    src="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
+                    alt="Frango na Mostarda"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="img-box lightbox"
+                  href="images/pratos/918x918/marmita-migno-suino.jpg"
+                  data-lightbox-anima="show-scale"
+                >
+                  <img
+                    src="images/pratos/918x918/marmita-migno-suino.jpg"
+                    alt="Mignon Suíno Oriental"
                   />
                 </a>
               </li>
@@ -586,52 +501,7 @@
                 >
                   <img
                     src="images/pratos/918x918/marmita_picadinho_carne.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  class="img-box lightbox"
-                  href="images/pratos/918x918/prato-picadinho-carne.jpg"
-                  data-lightbox-anima="show-scale"
-                >
-                  <img
-                    src="images/pratos/918x918/prato-picadinho-carne.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  class="img-box lightbox"
-                  href="images/pratos/918x918/marmita-migno-suino.jpg"
-                  data-lightbox-anima="show-scale"
-                >
-                  <img
-                    src="images/pratos/918x918/marmita-migno-suino.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  class="img-box lightbox"
-                  href="images/pratos/918x918/prato-frango.jpg"
-                  data-lightbox-anima="show-scale"
-                >
-                  <img src="images/pratos/918x918/prato-frango.jpg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  class="img-box lightbox"
-                  href="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
-                  data-lightbox-anima="show-scale"
-                >
-                  <img
-                    src="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
-                    alt=""
+                    alt="Picadinho ao Vinho"
                   />
                 </a>
               </li>
@@ -641,14 +511,16 @@
                   href="images/pratos/918x918/prato-verde.jpg"
                   data-lightbox-anima="show-scale"
                 >
-                  <img src="images/pratos/918x918/prato-verde.jpg" alt="" />
+                  <img
+                    src="images/pratos/918x918/prato-verde.jpg"
+                    alt="Prato Verde"
+                  />
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- FIM SESSAO CARROSSEL IMAGENS -->
 
       <i class="scroll-top scroll-top-mobile show fa fa-sort-asc"></i>
     </div>
@@ -682,7 +554,10 @@
                   href="https://www.instagram.com/saborcuritibainsta"
                   ><i class="fa fa-instagram"></i
                 ></a>
-                <a target="_blank" href="https://wa.me/5541998401944"
+                <a
+                  target="_blank"
+                  href="https://wa.me/5541998401944"
+                  class="whatsapp-test"
                   ><i class="im-phone-2"></i
                 ></a>
               </div>
