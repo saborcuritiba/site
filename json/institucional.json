@@ -1,0 +1,32 @@
+{
+  "empresa": {
+    "nome": "Sabor Curitiba",
+    "slogan": "Comida de Verdade",
+    "descricao": "Na Sabor Curitiba, fazemos comida de verdade: marmitas congeladas preparadas com ingredientes frescos e o melhor sabor da cidade. Utilizamos embalagens biodegradáveis e cuidamos de cada etapa para evitar desperdícios.",
+    "quem_somos": "Somos uma marmitaria especializada em marmitas congeladas, com foco em sabor e nutrição. Estamos localizados em Curitiba, no bairro Ganchinho, e atendemos exclusivamente por delivery próprio, sem atendimento presencial.",
+    "diferenciais": [
+      "Ingredientes frescos e selecionados",
+      "Comida caseira com padrão de qualidade",
+      "Embalagens biodegradáveis",
+      "Produção com foco em redução de desperdício",
+      "Entrega própria em Curitiba e região"
+    ],
+    "modelo_atendimento": {
+      "tipo": "Delivery",
+      "presencial": false
+    },
+    "site": "https://www.saborcuritiba.com.br"
+  },
+  "atendimento": {
+    "saudacao_por_horario": {
+      "manha": "Bom dia! Seja bem-vindo à Sabor Curitiba. Como posso te ajudar hoje?",
+      "tarde": "Boa tarde! Seja bem-vindo à Sabor Curitiba. Como posso te ajudar hoje?",
+      "noite": "Boa noite! Seja bem-vindo à Sabor Curitiba. Como posso te ajudar hoje?"
+    },
+    "regras_horario": {
+      "manha": "05:00-11:59",
+      "tarde": "12:00-17:59",
+      "noite": "18:00-04:59"
+    }
+  }
+}

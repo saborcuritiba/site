@@ -1,0 +1,82 @@
+{
+  "formularios": {
+    "pedido": {
+      "campos": [
+        {
+          "nome": "nome",
+          "descricao": "Nome do cliente",
+          "obrigatorio": true
+        },
+        {
+          "nome": "telefone",
+          "descricao": "Telefone ou WhatsApp",
+          "obrigatorio": true
+        },
+        {
+          "nome": "endereco",
+          "descricao": "Endereço completo para entrega",
+          "obrigatorio": true
+        },
+        {
+          "nome": "pagamento",
+          "descricao": "Forma de pagamento",
+          "obrigatorio": true
+        },
+        {
+          "nome": "itens",
+          "descricao": "Lista de marmitas do pedido",
+          "obrigatorio": true,
+          "estrutura": [
+            {
+              "marmita": "Nome exato conforme CARDAPIO",
+              "quantidade": "Quantidade solicitada"
+            }
+          ]
+        },
+        {
+          "nome": "valor_total",
+          "descricao": "Somatório dos itens + entrega",
+          "obrigatorio": true
+        },
+        {
+          "nome": "observacoes",
+          "descricao": "Observações do pedido",
+          "obrigatorio": false
+        }
+      ],
+      "mensagem_coleta_informacoes": "Ótima escolha! Para finalizar seu pedido, preciso de algumas informações: nome, endereço completo, forma de pagamento e telefone para contato.",
+      "mensagem_confirmacao": "Perfeito! Seu pedido foi encaminhado para nossa equipe de vendas. Em breve entraremos em contato para agendar a entrega."
+    },
+    "sac": {
+      "campos": [
+        {
+          "nome": "nome",
+          "descricao": "Nome do cliente",
+          "obrigatorio": true
+        },
+        {
+          "nome": "telefone",
+          "descricao": "Telefone ou WhatsApp",
+          "obrigatorio": true
+        },
+        {
+          "nome": "email",
+          "descricao": "E-mail para retorno",
+          "obrigatorio": false
+        },
+        {
+          "nome": "tipo",
+          "descricao": "Tipo da solicitação (Dúvida, Reclamação, Sugestão)",
+          "obrigatorio": true
+        },
+        {
+          "nome": "descricao",
+          "descricao": "Descrição do relato do cliente",
+          "obrigatorio": true
+        }
+      ],
+      "mensagem_coleta_informacoes": "Para registrar sua solicitação, preciso do seu nome, telefone, tipo da solicitação e a descrição do ocorrido.",
+      "mensagem_confirmacao": "Sua mensagem foi enviada ao nosso SAC. Nossa equipe analisará e responderá em até 5 dias úteis."
+    }
+  }
+}
