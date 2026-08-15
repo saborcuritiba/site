@@ -35,7 +35,7 @@
         },
         {
           "nome": "valor_total",
-          "descricao": "Somatório dos itens + entrega",
+          "descricao": "Valor total dos produtos (o frete será informado no contato posterior pela equipe)",
           "obrigatorio": true
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "mensagem_coleta_informacoes": "Ótima escolha! Para finalizar seu pedido, preciso de algumas informações: nome, endereço completo, forma de pagamento e telefone para contato.",
-      "mensagem_confirmacao": "Perfeito! Seu pedido foi encaminhado para nossa equipe de vendas. Em breve entraremos em contato para agendar a entrega."
+      "mensagem_confirmacao": "Perfeito! Seu pedido foi encaminhado para nossa equipe de vendas. Em breve entraremos em contato para confirmar o frete e agendar a entrega."
     },
     "sac": {
       "campos": [
