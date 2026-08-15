@@ -2,18 +2,24 @@
   "empresa": {
     "nome": "Sabor Curitiba",
     "slogan": "Comida de Verdade",
-    "descricao": "Na Sabor Curitiba, fazemos comida de verdade: marmitas congeladas preparadas com ingredientes frescos e o melhor sabor da cidade. Utilizamos embalagens biodegradáveis e cuidamos de cada etapa para evitar desperdícios.",
-    "quem_somos": "Somos uma marmitaria especializada em marmitas congeladas, com foco em sabor e nutrição. Estamos localizados em Curitiba, no bairro Ganchinho, e atendemos exclusivamente por delivery próprio, sem atendimento presencial.",
+    "descricao": "Na Sabor Curitiba, fazemos comida de verdade: marmitas congeladas preparadas com ingredientes frescos e o melhor sabor da cidade. Utilizamos embalagens sustentáveis, biodegradáveis e livres de Bisfenol A (BPA-Free), garantindo total segurança para sua alimentação.",
+    "quem_somos": "Somos uma marmitaria especializada em refeições congeladas que unem sabor, equilíbrio e nutrição, com cardápio elaborado por nutricionista. Estamos localizados na Rua Alexandro Glenski, nº 815 – Ganchinho – Curitiba/PR (CEP 81.935-394). Trabalhamos exclusivamente com delivery próprio.",
     "diferenciais": [
-      "Ingredientes frescos e selecionados",
-      "Comida caseira com padrão de qualidade",
-      "Embalagens biodegradáveis",
-      "Produção com foco em redução de desperdício",
+      "Cardápio elaborado por nutricionista",
+      "Embalagens biodegradáveis e BPA-Free (próprias para micro-ondas, forno e airfryer)",
+      "Refeições sem adição de conservantes artificiais",
+      "Ingredientes frescos, naturais e selecionados",
+      "Tempero caseiro com preparo artesanal e cuidadoso",
+      "Prontas em 5 minutos para facilitar a rotina",
       "Entrega própria em Curitiba e região"
     ],
     "modelo_atendimento": {
       "tipo": "Delivery",
       "presencial": false
+    },
+    "contato": {
+      "sac": "(41) 99840-1944",
+      "email": "contato@saborcuritiba.com.br"
     },
     "site": "https://www.saborcuritiba.com.br"
   },
@@ -28,5 +34,31 @@
       "tarde": "12:00-17:59",
       "noite": "18:00-04:59"
     }
-  }
+  },
+  "duvidas_frequentes": [
+    {
+      "pergunta": "Como funcionam as marmitas? Elas vêm congeladas?",
+      "resposta": "Sim! Nossas marmitas são entregues congeladas, preparadas sem conservantes artificiais e com ingredientes frescos, prontas para você armazenar no freezer e aquecer quando preferir."
+    },
+    {
+      "pergunta": "Como faço para esquentar a marmita?",
+      "resposta": "Nossas embalagens são biodegradáveis, livres de BPA e muito versáteis: você pode aquecer diretamente no micro-ondas, no forno ou na airfryer, seguindo as instruções do rótulo. O preparo leva cerca de 5 minutos!"
+    },
+    {
+      "pergunta": "Posso retirar o pedido no local?",
+      "resposta": "Trabalhamos exclusivamente com o nosso delivery próprio para garantir total agilidade e comodidade na entrega. Não possuímos ponto de atendimento presencial ou retirada física no local."
+    },
+    {
+      "pergunta": "Como é feita a entrega e qual o prazo?",
+      "resposta": "Realizamos entregas próprias em Curitiba e região. Os detalhes de agendamento e o valor do frete são informados no momento do fechamento do pedido pela nossa equipe ou diretamente através do nosso site oficial."
+    },
+    {
+      "pergunta": "Quais são as formas de pagamento aceitas?",
+      "resposta": "Aceitamos PIX, cartões de crédito e débito. As opções detalhadas são confirmadas durante o fechamento do seu pedido."
+    },
+    {
+      "pergunta": "As refeições contam com acompanhamento profissional?",
+      "resposta": "Sim! Todo o nosso cardápio é cuidadosamente elaborado por nutricionista, garantindo equilíbrio, sabor e qualidade nutricional para o seu dia a dia."
+    }
+  ]
 }
