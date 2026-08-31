@@ -91,7 +91,7 @@
   <body>
     <div id="preloader"></div>
     <div>
-      <!-- INICIO SESSAO MENU -->
+     <!-- INICIO SESSAO MENU -->
       <header
         class="fixed-top scroll-change wide-area"
         data-menu-anima="fade-in"
@@ -153,7 +153,64 @@
                   <li><a href="fale-conosco.html">Fale Conosco</a></li>
                   <li><a href="quem-somos.html">Quem Somos</a></li>
                 </ul>
-                <div class="nav navbar-nav navbar-right"></div>
+                <!-- Carrinho integrado nativamente na navegação -->
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <div class="shop-menu-cnt" style="position: relative; display: inline-block; margin: 10px 15px;">
+                      <a href="#" style="text-decoration: none; color: inherit; display: inline-block; position: relative; padding: 5px 0;">
+                        <i class="im-shop-3" style="font-size: 24px; vertical-align: middle; display: inline-block;">
+                          <span class="cart-count" style="position: absolute; top: -2px; right: -8px; background: #000; color: #fff; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-style: normal; font-weight: bold;">3</span>
+                        </i>
+                      </a>
+                      
+                      <!-- CARRINHO DE COMPRAS -->
+                      <div class="shop-menu" style="min-width: 280px; right: 0; left: auto; margin-top: 0px; padding-top: 15px;">
+                        <ul class="shop-cart">
+                          <li class="cart-item" style="display: flex; align-items: center; gap: 10px;">
+                            <img
+                              src="images/pratos/918x918/marmita-migno-suino.jpg"
+                              alt="Mignon Suíno Oriental"
+                              style="width: 50px; height: 50px; object-fit: cover;"
+                            />
+                            <div class="cart-content" style="flex: 1;">
+                              <h5 style="margin: 0; font-size: 13px; line-height: 1.2;">Mignon Suíno Oriental</h5>
+                              <span class="cart-quantity" style="font-size: 11px;"> 1 x R$ 22,90 </span>
+                            </div>
+                          </li>
+                          <li class="cart-item" style="display: flex; align-items: center; gap: 10px;">
+                            <img
+                              src="images/pratos/650x650/imagem-marmita-carne2.jpg"
+                              alt="Picadinho ao Vinho"
+                              style="width: 50px; height: 50px; object-fit: cover;"
+                            />
+                            <div class="cart-content" style="flex: 1;">
+                              <h5 style="margin: 0; font-size: 13px; line-height: 1.2;">Picadinho ao Vinho com Cogumelos</h5>
+                              <span class="cart-quantity" style="font-size: 11px;"> 1 x R$ 24,90 </span>
+                            </div>
+                          </li>
+                          <li class="cart-item" style="display: flex; align-items: center; gap: 10px;">
+                            <img
+                              src="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
+                              alt="Frango na Mostarda"
+                              style="width: 50px; height: 50px; object-fit: cover;"
+                            />
+                            <div class="cart-content" style="flex: 1;">
+                              <h5 style="margin: 0; font-size: 13px; line-height: 1.2;">Frango na Mostarda</h5>
+                              <span class="cart-quantity" style="font-size: 11px;"> 1 x R$ 20,90 </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class="cart-total" style="display: flex; justify-content: space-between; margin-top: 10px; font-weight: bold;">Subtotal: <span>R$ 68,70</span></p>
+                        <p class="cart-buttons" style="display: flex; gap: 5px; margin-bottom: 0;">
+                          <a href="#" class="btn btn-xs cart-view" style="flex: 1; text-align: center;">Ver Carrinho</a>
+                          <a href="#" class="btn btn-xs cart-checkout" style="flex: 1; text-align: center;">Finalizar</a>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- CARRINHO DE COMPRAS -->
+              </div>
               </div>
             </div>
           </div>
@@ -467,6 +524,7 @@
         ></script>
         <script src="scripts/social.stream.min.js"></script>
         <script src="scripts/smooth.scroll.min.js"></script>
+        <script src="scripts/sabor-cart.js"></script>
       </div>
     </footer>
     <!-- FIM SESSAO FOOTER -->

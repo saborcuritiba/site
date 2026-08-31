@@ -111,7 +111,7 @@
     <div id="preloader"></div>
 
     <div>
-      <!-- INICIO SESSAO MENU -->
+       <!-- INICIO SESSAO MENU -->
       <header
         class="fixed-top scroll-change wide-area"
         data-menu-anima="fade-in"
@@ -131,64 +131,106 @@
                 >
                   <i class="fa fa-bars"></i>
                 </button>
-
-                <a class="navbar-brand" href="../../index.html">
+                <a class="navbar-brand" href="index.html">
                   <img
                     class="logo-default"
-                    src="../../images/logo_retangular.png"
+                    src="images/logo_retangular.png"
                     alt="logo"
                   />
                 </a>
               </div>
-
               <div class="collapse navbar-collapse" id="main-navbar">
                 <ul class="nav navbar-nav">
-                  <li>
-                    <a href="../../index.html">Home</a>
-                  </li>
-
+                  <li><a href="index.html">Home</a></li>
                   <li class="dropdown active">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                       Produtos <span class="caret"></span>
                     </a>
-
                     <div
                       class="mega-menu dropdown-menu multi-level row bg-menu"
                     >
                       <div class="col">
                         <ul class="fa-ul no-icons text-s">
                           <li>
-                            <a href="../mignon-suino-oriental/index.html">
-                              Mignon Suíno Oriental
-                            </a>
+                            <a href="produtos/mignon-suino-oriental/index.html"
+                              >Mignon Suíno Oriental</a
+                            >
                           </li>
-
                           <li>
-                            <a href="../picadinho-carne-vinho/index.html">
-                              Picadinho de carne ao vinho
-                            </a>
+                            <a href="produtos/picadinho-carne-vinho/index.html"
+                              >Picadinho de carne ao vinho</a
+                            >
                           </li>
-
                           <li>
-                            <a href="../frango-na-mostarda/index.html">
-                              Frango na mostarda
-                            </a>
+                            <a href="produtos/frango-na-mostarda/index.html"
+                              >Frango na mostarda</a
+                            >
                           </li>
                         </ul>
                       </div>
                     </div>
                   </li>
-
+                  <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                  <li><a href="quem-somos.html">Quem Somos</a></li>
+                </ul>
+                <!-- Carrinho integrado nativamente na navegação -->
+                <ul class="nav navbar-nav navbar-right">
                   <li>
-                    <a href="../../fale-conosco.html"> Fale Conosco </a>
-                  </li>
-
-                  <li>
-                    <a href="../../quem-somos.html"> Quem Somos </a>
+                    <div class="shop-menu-cnt" style="position: relative; display: inline-block; margin: 10px 15px;">
+                      <a href="#" style="text-decoration: none; color: inherit; display: inline-block; position: relative; padding: 5px 0;">
+                        <i class="im-shop-3" style="font-size: 24px; vertical-align: middle; display: inline-block;">
+                          <span class="cart-count" style="position: absolute; top: -2px; right: -8px; background: #000; color: #fff; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-style: normal; font-weight: bold;">3</span>
+                        </i>
+                      </a>
+                      
+                      <!-- CARRINHO DE COMPRAS -->
+                      <div class="shop-menu" style="min-width: 280px; right: 0; left: auto; margin-top: 0px; padding-top: 15px;">
+                        <ul class="shop-cart">
+                          <li class="cart-item" style="display: flex; align-items: center; gap: 10px;">
+                            <img
+                              src="images/pratos/918x918/marmita-migno-suino.jpg"
+                              alt="Mignon Suíno Oriental"
+                              style="width: 50px; height: 50px; object-fit: cover;"
+                            />
+                            <div class="cart-content" style="flex: 1;">
+                              <h5 style="margin: 0; font-size: 13px; line-height: 1.2;">Mignon Suíno Oriental</h5>
+                              <span class="cart-quantity" style="font-size: 11px;"> 1 x R$ 22,90 </span>
+                            </div>
+                          </li>
+                          <li class="cart-item" style="display: flex; align-items: center; gap: 10px;">
+                            <img
+                              src="images/pratos/650x650/imagem-marmita-carne2.jpg"
+                              alt="Picadinho ao Vinho"
+                              style="width: 50px; height: 50px; object-fit: cover;"
+                            />
+                            <div class="cart-content" style="flex: 1;">
+                              <h5 style="margin: 0; font-size: 13px; line-height: 1.2;">Picadinho ao Vinho com Cogumelos</h5>
+                              <span class="cart-quantity" style="font-size: 11px;"> 1 x R$ 24,90 </span>
+                            </div>
+                          </li>
+                          <li class="cart-item" style="display: flex; align-items: center; gap: 10px;">
+                            <img
+                              src="images/pratos/918x918/marmita-frango-na-mostarda.jpg"
+                              alt="Frango na Mostarda"
+                              style="width: 50px; height: 50px; object-fit: cover;"
+                            />
+                            <div class="cart-content" style="flex: 1;">
+                              <h5 style="margin: 0; font-size: 13px; line-height: 1.2;">Frango na Mostarda</h5>
+                              <span class="cart-quantity" style="font-size: 11px;"> 1 x R$ 20,90 </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <p class="cart-total" style="display: flex; justify-content: space-between; margin-top: 10px; font-weight: bold;">Subtotal: <span>R$ 68,70</span></p>
+                        <p class="cart-buttons" style="display: flex; gap: 5px; margin-bottom: 0;">
+                          <a href="#" class="btn btn-xs cart-view" style="flex: 1; text-align: center;">Ver Carrinho</a>
+                          <a href="#" class="btn btn-xs cart-checkout" style="flex: 1; text-align: center;">Finalizar</a>
+                        </p>
+                      </div>
+                    </div>
                   </li>
                 </ul>
-
-                <div class="nav navbar-nav navbar-right"></div>
+                <!-- CARRINHO DE COMPRAS -->
+              </div>
               </div>
             </div>
           </div>
@@ -234,49 +276,21 @@
                 </div>
 
                 <div class="col-xs-6 col-sm-7">
-                  <div
-                    class="advs-box advs-box-top-icon"
-                    data-anima="scale-up"
-                    data-trigger="hover"
-                    onclick="
-                      window.open(
-                        'https://wa.me/5541998401944?text=Olá%2C%20quero%20comprar%20o%20Picadinho%20ao%20Vinho%20com%20arroz%20e%20feijão.',
-                        '_blank',
-                      )
-                    "
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-comprar"
+                    data-id="picadinho_carne_02"
                     style="
-                      cursor: pointer;
-                      display: inline-block;
-                      margin: 0;
-                      padding: 10px 15px;
-                      text-align: left;
+                      background-color: #436541;
+                      border-color: #436541;
+                      color: #ffffff;
+                      padding: 12px 20px;
+                      font-weight: bold;
+                      border-radius: 4px;
                     "
                   >
-                    <img
-                      class="icon anima"
-                      src="../../images/whatsapp-svgrepo-com.svg"
-                      width="30"
-                      height="30"
-                      alt="WhatsApp"
-                      style="
-                        display: inline-block;
-                        vertical-align: middle;
-                        margin-right: 8px;
-                      "
-                    />
-                    <div style="display: inline-block; vertical-align: middle">
-                      <h3 style="font-size: 14px; margin: 0; font-weight: bold">
-                        Compre agora!
-                      </h3>
-                      <p style="margin: 0; font-size: 12px">
-                        <a
-                          href="https://wa.me/5541998401944?text=Olá%2C%20quero%20comprar%20o%20Picadinho%20ao%20Vinho%20com%20arroz%20e%20feijão."
-                          style="color: inherit"
-                          >(41) 99840-1944</a
-                        >
-                      </p>
-                    </div>
-                  </div>
+                    <i class="im-shop-3" style="margin-right: 8px;"></i>Comprar
+                  </button>
                 </div>
               </div>
 
@@ -747,5 +761,6 @@
     <script src="../../scripts/social.stream.min.js"></script>
 
     <script src="../../scripts/smooth.scroll.min.js"></script>
+    <script src="../../scripts/sabor-cart.js"></script>
   </body>
 </html>

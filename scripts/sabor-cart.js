@@ -191,5 +191,10 @@
           $btn.data("processing", false);
         }, 300);
       });
+
+    // Impede que cliques na parte interna da caixa do carrinho fechem o dropdown no desktop/mobile
+    $(document).on("click", ".shop-menu", function (e) {
+      e.stopPropagation();
+    });
   });
 })(jQuery);
