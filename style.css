@@ -6968,3 +6968,32 @@ html.iex .img-box img {
 .social-group a.whatsapp-test:hover i {
     color: #ffffff !important;
 }
+
+
+/* Força opacidade total e remove qualquer borda lateral antiga */
+#toast-container .toast {
+    opacity: 1 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    border-left: none !important;
+}
+
+/* Estilo referente à Opção 01: Fundo Branco com título verde (#436541) e texto escuro */
+#toast-container .toast-success {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+}
+
+#toast-container .toast-success .toast-title {
+    color: #436541 !important;
+    font-weight: bold !important;
+}
+
+#toast-container .toast-success .toast-message {
+    color: #555555 !important;
+}
+
+/* Ajuste do botão de fechar (X) */
+#toast-container .toast-close-button {
+    color: #333333 !important;
+    opacity: 0.8 !important;
+}

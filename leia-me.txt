@@ -1,2 +1,11 @@
 ﻿Imagem para whatsApp
 	1200x630.
+
+Imagem para whatsApp
+		1200x630.
+Template Site
+		https://preview.themeforest.net/item/gourmet-restaurant-gastronomy-template/full_screen_preview/20051216	
+
+Documentacao Toastr
+	https://codeseven.github.io/toastr/demo.html
+	https://plnkr.co/edit/6W9URNyyp2ItO4aUWzBB?p=preview&preview

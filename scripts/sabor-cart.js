@@ -5,6 +5,27 @@
   $.SaborCart = {
     // Inicializa o carrinho e carrega o cache do cardápio
     init: function () {
+      // Configurações do Toastr (tempo de exibição: 25 segundos)
+      if (typeof toastr !== "undefined") {
+        toastr.options = {
+          closeButton: true,
+          debug: false,
+          newestOnTop: true,
+          progressBar: true,
+          positionClass: "toast-top-right",
+          preventDuplicates: false,
+          showDuration: "300",
+          hideDuration: "1000",
+          timeOut: "25000",
+          extendedTimeOut: "2000",
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+          escapeHtml: false,
+        };
+      }
+
       $.getJSON("/json/cardapio.json", function (data) {
         cardapioCache = [];
         if (data.categorias) {
@@ -108,6 +129,16 @@
       }
 
       $.SaborCart.saveCart(cart);
+
+      // Notificação Toastr exibindo o nome do produto inserido
+      if (typeof toastr !== "undefined") {
+        var msgToast =
+          "<b>" +
+          produto.nome +
+          "</b> foi inserido com sucesso no seu carrinho.<br><br>" +
+          "<a href='#carrinho' style='color: #ffffff; background-color: #436541; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: bold; display: inline-block;'>Ver Carrinho &rarr;</a>";
+        toastr.success(msgToast, "Produto adicionado ao carrinho");
+      }
     },
 
     // Retorna o valor total do carrinho
