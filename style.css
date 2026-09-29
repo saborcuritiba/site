@@ -6997,3 +6997,57 @@ html.iex .img-box img {
     color: #333333 !important;
     opacity: 0.8 !important;
 }
+
+/* ==========================================================================
+   Ajustes do Carrinho Suspenso (Dropdown Menu)
+   ========================================================================== */
+
+/* 1. Área de ponte/contato e comportamento de exibição do dropdown */
+.shop-menu-cnt {
+  padding-bottom: 15px !important; /* Cria a área de contato invisível até o dropdown */
+  margin-bottom: 0 !important;
+}
+
+.shop-menu-cnt .shop-menu {
+  top: 100% !important; /* Cola o topo do carrinho na base da div container */
+}
+
+.shop-menu-cnt .shop-menu::before {
+  content: '';
+  position: absolute;
+  top: -25px;        /* Alcance vertical até o ícone */
+  left: -30px;       /* Margem extra de tolerância para a esquerda */
+  right: -30px;      /* Margem extra de tolerância para a direita */
+  height: 25px;      /* Preenche a altura da lacuna */
+  display: block;
+  background: transparent; /* Invisível ao usuário */
+}
+
+.shop-menu.is-active {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 2. Dimensões, altura dinâmica dos itens e rolagem */
+.shop-cart {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.shop-cart .cart-item {
+  height: auto !important;
+  min-height: 70px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.shop-cart .cart-item .cart-content {
+  display: block;
+  width: 100%;
+}
+
+/* 3. Correção da borda divisória no hover */
+.shop-cart .cart-item:hover {
+  border-bottom: 1px solid #d8d8d8 !important;
+}

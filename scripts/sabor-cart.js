@@ -223,6 +223,40 @@
         }, 300);
       });
 
+    // 1. Ao clicar no ícone, abre e fecha o carrinho
+    $(document).on("click", ".shop-menu-cnt > a", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      var $cartMenu = $(this).siblings(".shop-menu");
+
+      $cartMenu.toggleClass("is-active");
+
+      if ($cartMenu.hasClass("is-active")) {
+        $cartMenu.stop(true, true).fadeIn(150);
+      } else {
+        $cartMenu.stop(true, true).fadeOut(150, function () {
+          $(this).attr("style", ""); // Limpa o display:none do jQuery para liberar o hover
+        });
+      }
+    });
+
+    // 2. Impede que clicar dentro do carrinho o feche
+    $(document).on("click", ".shop-menu", function (e) {
+      e.stopPropagation();
+    });
+
+    // 3. Fecha se clicar em qualquer lugar fora e reseta o hover
+    $(document).on("click", function (e) {
+      if (!$(e.target).closest(".shop-menu-cnt").length) {
+        $(".shop-menu")
+          .removeClass("is-active")
+          .fadeOut(150, function () {
+            $(this).attr("style", ""); // Limpa o display:none do jQuery para liberar o hover
+          });
+      }
+    });
+
     // Impede que cliques na parte interna da caixa do carrinho fechem o dropdown no desktop/mobile
     $(document).on("click", ".shop-menu", function (e) {
       e.stopPropagation();
