@@ -259,46 +259,418 @@
       <hr class="space xs" />
       <hr class="space xs" />
 
-      <!-- INICIO SESSAO SOBRE NOS -->
-      <div>
+
+      
+
+
+<!-- INICIO SESSAO CARRINHO DE COMPRAS -->
+      <div class="section-empty">
         <div class="container content">
+          <div class="title-base text-center">
+            <hr />
+            <h2>Carrinho de Compras</h2>
+            <p>Revise seus itens, verifique os valores e preencha os dados de entrega.</p>
+          </div>
+
+          <hr class="space s" />
+
+          <!-- Estilos CSS embutidos para corrigir bordas, cores verdes e comportamento mobile -->
+          <style>
+            .cart-mobile-card { display: none; }
+            @media (max-width: 767px) {
+              .cart-table-desktop { display: none !important; }
+              .cart-mobile-card { display: block !important; }
+            }
+            
+            /* Estilização consistente dos botões de quantidade com o verde do tema */
+            .qty-btn {
+              background-color: #436541 !important;
+              color: #ffffff !important;
+              border-color: #365334 !important;
+              font-weight: bold !important;
+              transition: background-color 0.2s ease;
+            }
+            .qty-btn:hover, .qty-btn:focus {
+              background-color: #365334 !important;
+              color: #ffffff !important;
+              border-color: #2b422a !important;
+            }
+            .qty-btn:active {
+              background-color: #2b422a !important;
+              color: #ffffff !important;
+            }
+            
+            /* Ajuste de bordas arredondadas e integradas do input-group */
+            .input-group .input-group-btn:first-child .btn {
+              border-top-left-radius: 4px !important;
+              border-bottom-left-radius: 4px !important;
+              border-top-right-radius: 0 !important;
+              border-bottom-right-radius: 0 !important;
+            }
+            .input-group .input-group-btn:last-child .btn {
+              border-top-right-radius: 4px !important;
+              border-bottom-right-radius: 4px !important;
+              border-top-left-radius: 0 !important;
+              border-bottom-left-radius: 0 !important;
+            }
+            .input-group .form-control {
+              border-radius: 0 !important;
+              border-left: 1px solid #ccc !important;
+              border-right: 1px solid #ccc !important;
+            }
+
+            /* Estilização refinada para inputs e selects do formulário */
+            .cart-form-control {
+              border-radius: 4px !important;
+              border: 1px solid #d5d5d5 !important;
+              height: 42px !important;
+              font-size: 14px !important;
+              color: #333 !important;
+              background-color: #fff !important;
+            }
+            .cart-form-control:focus {
+              border-color: #436541 !important;
+              box-shadow: 0 0 5px rgba(67, 101, 65, 0.2) !important;
+            }
+          </style>
+
           <div class="row">
-            <div class="col-md-6 text-center">
-              <div class="title-base">
-                <hr />
-                <h2>Carrinho de compras </h2>
+            <!-- SEÇÃO 1: ITENS DO CARRINHO -->
+            <div class="col-md-8">
+              <h3 class="text-bold" style="font-size: 20px; margin-bottom: 20px;">Itens Selecionados</h3>
+              
+              <!-- TABELA PARA DESKTOP -->
+              <div class="table-responsive cart-table-desktop" style="border: none;">
+                <table class="table" style="vertical-align: middle;">
+                  <thead>
+                    <tr style="font-size: 14px; color: #444;">
+                      <th style="width: 70px;">Produto</th>
+                      <th>Descrição</th>
+                      <th class="text-center" style="width: 140px;">Qtd</th>
+                      <th class="text-right" style="width: 110px;">Preço Unit.</th>
+                      <th class="text-right" style="width: 110px;">Total</th>
+                      <th class="text-center" style="width: 50px;">Remover</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="font-size: 15px;">
+                      <td>
+                        <img src="images/pratos/918x918/marmita-migno-suino.jpg" alt="Mignon Suíno Oriental" style="width: 65px; height: 65px; object-fit: cover; border-radius: 4px;" />
+                      </td>
+                      <td>
+                        <h5 style="margin: 0; font-size: 15px; font-weight: bold;">Mignon Suíno Oriental</h5>
+                        <small style="color: #666; font-size: 13px;">Linha Dia a Dia</small>
+                      </td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm" style="width: 110px; margin: 0 auto;">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&minus;</button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1" readonly style="background-color: #fff; font-weight: bold;" />
+                          <span class="input-group-btn">
+                            <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&plus;</button>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="text-right" style="font-size: 15px;">R$ 22,90</td>
+                      <td class="text-right" style="font-weight: bold; font-size: 15px;">R$ 22,90</td>
+                      <td class="text-center">
+                        <a href="#" style="display: inline-block; line-height: 1;" title="Remover este item do carrinho">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#436541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr style="font-size: 15px;">
+                      <td>
+                        <img src="images/pratos/650x650/imagem-marmita-carne2.jpg" alt="Picadinho ao Vinho" style="width: 65px; height: 65px; object-fit: cover; border-radius: 4px;" />
+                      </td>
+                      <td>
+                        <h5 style="margin: 0; font-size: 15px; font-weight: bold;">Picadinho ao Vinho com Cogumelos</h5>
+                        <small style="color: #666; font-size: 13px;">Linha Dia a Dia</small>
+                      </td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm" style="width: 110px; margin: 0 auto;">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&minus;</button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1" readonly style="background-color: #fff; font-weight: bold;" />
+                          <span class="input-group-btn">
+                            <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&plus;</button>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="text-right" style="font-size: 15px;">R$ 24,90</td>
+                      <td class="text-right" style="font-weight: bold; font-size: 15px;">R$ 24,90</td>
+                      <td class="text-center">
+                        <a href="#" style="display: inline-block; line-height: 1;" title="Remover este item do carrinho">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#436541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr style="font-size: 15px;">
+                      <td>
+                        <img src="images/pratos/918x918/marmita-frango-na-mostarda.jpg" alt="Frango na Mostarda" style="width: 65px; height: 65px; object-fit: cover; border-radius: 4px;" />
+                      </td>
+                      <td>
+                        <h5 style="margin: 0; font-size: 15px; font-weight: bold;">Frango na Mostarda</h5>
+                        <small style="color: #666; font-size: 13px;">Linha Dia a Dia</small>
+                      </td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm" style="width: 110px; margin: 0 auto;">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&minus;</button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1" readonly style="background-color: #fff; font-weight: bold;" />
+                          <span class="input-group-btn">
+                            <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&plus;</button>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="text-right" style="font-size: 15px;">R$ 20,90</td>
+                      <td class="text-right" style="font-weight: bold; font-size: 15px;">R$ 20,90</td>
+                      <td class="text-center">
+                        <a href="#" style="display: inline-block; line-height: 1;" title="Remover este item do carrinho">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#436541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <p>
-                Em breve suas compras estarão disponíveis para visualização e finalização. Aproveite para conferir nossos produtos e promoções!
-              </p>
-              <hr class="space xs" />
-              <a href="quem-somos.html" class="btn-text">Saiba mais</a>
+
+              <!-- CARDS PARA VISUALIZAÇÃO MOBILE (CELULAR) COM LIXEIRA -->
+              <div class="cart-mobile-card">
+                <!-- Item 1 -->
+                <div style="background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; padding: 15px; margin-bottom: 15px; position: relative;">
+                  <a href="#" style="position: absolute; top: 12px; right: 15px; display: inline-block; line-height: 1;" title="Remover este item do carrinho">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#436541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                  </a>
+                  <div style="display: flex; align-items: center; margin-bottom: 12px; padding-right: 30px;">
+                    <img src="images/pratos/918x918/marmita-migno-suino.jpg" alt="Mignon Suíno Oriental" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; margin-right: 12px;" />
+                    <div>
+                      <h5 style="margin: 0 0 4px 0; font-size: 15px; font-weight: bold;">Mignon Suíno Oriental</h5>
+                      <small style="color: #666; font-size: 12px;">Linha Dia a Dia</small>
+                    </div>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f0f0f0; padding-top: 10px;">
+                    <div class="input-group input-group-sm" style="width: 110px;">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&minus;</button>
+                      </span>
+                      <input type="text" class="form-control text-center" value="1" readonly style="background-color: #fff; font-weight: bold;" />
+                      <span class="input-group-btn">
+                        <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&plus;</button>
+                      </span>
+                    </div>
+                    <div style="text-align: right;">
+                      <div style="font-size: 12px; color: #777;">Unit: R$ 22,90</div>
+                      <div style="font-size: 16px; font-weight: bold; color: #333;">Total: R$ 22,90</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div style="background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; padding: 15px; margin-bottom: 15px; position: relative;">
+                  <a href="#" style="position: absolute; top: 12px; right: 15px; display: inline-block; line-height: 1;" title="Remover este item do carrinho">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#436541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                  </a>
+                  <div style="display: flex; align-items: center; margin-bottom: 12px; padding-right: 30px;">
+                    <img src="images/pratos/650x650/imagem-marmita-carne2.jpg" alt="Picadinho ao Vinho" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; margin-right: 12px;" />
+                    <div>
+                      <h5 style="margin: 0 0 4px 0; font-size: 15px; font-weight: bold;">Picadinho ao Vinho com Cogumelos</h5>
+                      <small style="color: #666; font-size: 12px;">Linha Dia a Dia</small>
+                    </div>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f0f0f0; padding-top: 10px;">
+                    <div class="input-group input-group-sm" style="width: 110px;">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&minus;</button>
+                      </span>
+                      <input type="text" class="form-control text-center" value="1" readonly style="background-color: #fff; font-weight: bold;" />
+                      <span class="input-group-btn">
+                        <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&plus;</button>
+                      </span>
+                    </div>
+                    <div style="text-align: right;">
+                      <div style="font-size: 12px; color: #777;">Unit: R$ 24,90</div>
+                      <div style="font-size: 16px; font-weight: bold; color: #333;">Total: R$ 24,90</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div style="background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; padding: 15px; margin-bottom: 15px; position: relative;">
+                  <a href="#" style="position: absolute; top: 12px; right: 15px; display: inline-block; line-height: 1;" title="Remover este item do carrinho">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#436541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                  </a>
+                  <div style="display: flex; align-items: center; margin-bottom: 12px; padding-right: 30px;">
+                    <img src="images/pratos/918x918/marmita-frango-na-mostarda.jpg" alt="Frango na Mostarda" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; margin-right: 12px;" />
+                    <div>
+                      <h5 style="margin: 0 0 4px 0; font-size: 15px; font-weight: bold;">Frango na Mostarda</h5>
+                      <small style="color: #666; font-size: 12px;">Linha Dia a Dia</small>
+                    </div>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f0f0f0; padding-top: 10px;">
+                    <div class="input-group input-group-sm" style="width: 110px;">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&minus;</button>
+                      </span>
+                      <input type="text" class="form-control text-center" value="1" readonly style="background-color: #fff; font-weight: bold;" />
+                      <span class="input-group-btn">
+                        <button class="btn btn-default qty-btn" type="button" style="padding: 4px 10px;">&plus;</button>
+                      </span>
+                    </div>
+                    <div style="text-align: right;">
+                      <div style="font-size: 12px; color: #777;">Unit: R$ 20,90</div>
+                      <div style="font-size: 16px; font-weight: bold; color: #333;">Total: R$ 20,90</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <div
-                class="coverflow-slider"
-                data-options="enableMousewheel:false"
-                data-width="45"
-              >
-                <ul class="slides">
-                  <li>
-                    <a
-                      class="img-box circle lightbox thumbnail"
-                      href="images/logo_BordaBranca_M.png"
-                      data-lightbox-anima="show-scale"
-                    >
-                      <span
-                        ><img src="images/logo_BordaBranca_M.png" alt=""
-                      /></span>
-                    </a>
-                  </li>
-                </ul>
+
+            <!-- SEÇÃO 2: TOTAIS E ENDEREÇO / FINALIZAÇÃO -->
+            <div class="col-md-4">
+              <div class="well" style="background-color: #f9f9f9; border: 1px solid #e5e5e5; border-radius: 4px; padding: 25px; margin-top: 10px;">
+                <h3 class="text-bold" style="font-size: 20px; margin-top: 0; margin-bottom: 20px;">Resumo do Pedido</h3>
+                
+                <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 15px;">
+                  <span>Subtotal:</span>
+                  <span>R$ 68,70</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 15px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+                  <span>Taxa de Entrega:</span>
+                  <span style="color: #666;">A calcular</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-size: 18px; font-weight: bold; color: #333;">
+                  <span>Total:</span>
+                  <span>R$ 68,70</span>
+                </div>
+
+                <hr class="space xs" />
+
+                <h4 class="text-bold" style="font-size: 16px; margin-bottom: 15px;">Endereço de Entrega</h4>
+                <form>
+                  <div class="form-group" style="margin-bottom: 12px;">
+                    <input type="text" class="form-control cart-form-control" placeholder="Endereço (Rua, Av...)" />
+                  </div>
+                  
+                  <div class="row" style="margin-bottom: 12px;">
+                    <div class="col-xs-6" style="padding-right: 5px;">
+                      <input type="text" class="form-control cart-form-control" placeholder="Número" />
+                    </div>
+                    <div class="col-xs-6" style="padding-left: 5px;">
+                      <input type="text" class="form-control cart-form-control" placeholder="CEP" />
+                    </div>
+                  </div>
+
+                  <!-- SELECT DE BAIRROS DE CURITIBA -->
+                  <div class="form-group" style="margin-bottom: 12px;">
+                    <select class="form-control cart-form-control" style="font-family: inherit;">
+                      <option value="">Selecione o Bairro</option>
+                      <option value="1">Abranches</option>
+                      <option value="2">Água Verde</option>
+                      <option value="3">Ahú</option>
+                      <option value="4">Alto Boqueirão</option>
+                      <option value="5">Alto da Glória</option>
+                      <option value="6">Alto da XV</option>
+                      <option value="7">Atuba</option>
+                      <option value="8">Augusta</option>
+                      <option value="9">Bacacheri</option>
+                      <option value="10">Bairro Alto</option>
+                      <option value="11">Barrerinha</option>
+                      <option value="12">Batel</option>
+                      <option value="13">Bigorrilho</option>
+                      <option value="14">Boa Vista</option>
+                      <option value="15">Bom Retiro</option>
+                      <option value="16">Boqueirão</option>
+                      <option value="17">Butiatuvinha</option>
+                      <option value="18">Cabral</option>
+                      <option value="19">Cachoeira</option>
+                      <option value="20">Cajuru</option>
+                      <option value="21">Campina do Siqueira</option>
+                      <option value="22">Campo Comprido</option>
+                      <option value="23">Campo do Santana</option>
+                      <option value="24">Capão da Imbuia</option>
+                      <option value="25">Capão Raso</option>
+                      <option value="26">Cascatinha</option>
+                      <option value="27">Caximba</option>
+                      <option value="28">Centro</option>
+                      <option value="29">Centro Cívico</option>
+                      <option value="30">Cidade Industrial de Curitiba</option>
+                      <option value="31">Cristo Rei</option>
+                      <option value="32">Fanny</option>
+                      <option value="33">Fazendinha</option>
+                      <option value="34">Ganchinho</option>
+                      <option value="35">Guabirotuba</option>
+                      <option value="36">Guaíra</option>
+                      <option value="37">Hauer</option>
+                      <option value="38">Hugo Lange</option>
+                      <option value="39">Jardim Botânico</option>
+                      <option value="40">Jardim das Américas</option>
+                      <option value="41">Jardim Social</option>
+                      <option value="42">Juvevê</option>
+                      <option value="43">Lamenha Pequena</option>
+                      <option value="44">Mercês</option>
+                      <option value="45">Mossunguê</option>
+                      <option value="46">Novo Mundo</option>
+                      <option value="47">Órleans</option>
+                      <option value="48">Parolin</option>
+                      <option value="49">Pilarzinho</option>
+                      <option value="50">Pinheirinho</option>
+                      <option value="51">Portão</option>
+                      <option value="52">Prado Velho</option>
+                      <option value="53">Rebouças</option>
+                      <option value="54">Riviera</option>
+                      <option value="55">Santa Cândida</option>
+                      <option value="56">Santa Felicidade</option>
+                      <option value="57">Santa Quitéria</option>
+                      <option value="58">Santo Inácio</option>
+                      <option value="59">São Braz</option>
+                      <option value="60">São Francisco</option>
+                      <option value="61">São João</option>
+                      <option value="62">São Lourenço</option>
+                      <option value="63">São Miguel</option>
+                      <option value="64">Sítio Cercado</option>
+                      <option value="65">Taboão</option>
+                      <option value="66">Tarumã</option>
+                      <option value="67">Tatuquara</option>
+                      <option value="68">Tingui</option>
+                      <option value="69">Uberaba</option>
+                      <option value="70">Umbará</option>
+                      <option value="71">Vila Izabel</option>
+                      <option value="72">Vista Alegre</option>
+                      <option value="73">Xaxim</option>
+                    </select>
+                  </div>
+
+                  <!-- TEXTAREA DE OBSERVAÇÕES -->
+                  <div class="form-group" style="margin-bottom: 20px;">
+                    <textarea class="form-control" rows="3" placeholder="Coloque aqui as informações importantes do seu pedido/entrega" style="font-family: inherit; font-size: 14px; resize: vertical; border-radius: 4px; border: 1px solid #d5d5d5; padding: 10px;"></textarea>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btn-block" style="background-color: #436541; border-color: #436541; color: #ffffff; font-weight: bold; font-size: 15px; padding: 14px;">
+                    Finalizar Pedido
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- FIM SESSAO SOBRE NOS -->
+      <!-- FIM SESSAO CARRINHO DE COMPRAS -->
+
+
+
+
+
+
+
+
+
+
+
+
 
         
 
