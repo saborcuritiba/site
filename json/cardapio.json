@@ -17,7 +17,7 @@
           "descricao": "Cremoso e suculento estrogonofe de peito de frango selecionado, preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e um toque especial de especiarias. Acompanha arroz branquinho e soltinho, trazendo o aconchego e o sabor inconfundível da comida caseira com toda a praticidade que você precisa.",
           "disponivel": true,
           "foto": "produtos/estrogonofe-de-frango/images/principal.jpg",
-          "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-frango/index.html",
+          "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-frango/",
           "ingredientes": [
             "Peito de frango",
             "Arroz",
@@ -50,7 +50,7 @@
           "descricao": "Cremoso e suculento estrogonofe de carne bovina (patinho) preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e um toque equilibrado de temperos. Acompanha arroz branquinho e soltinho, trazendo o aconchego do clássico estrogonofe caseiro com toda a praticidade que você precisa no dia a dia.",
           "disponivel": true,
           "foto": "produtos/estrogonofe-de-carne/images/principal.jpg",
-          "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-carne/index.html",
+          "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-carne/",
           "ingredientes": [
             "Carne bovina (patinho)",
             "Arroz",
@@ -83,7 +83,7 @@
           "descricao": "Delicioso mignon suíno preparado ao molho oriental, com shoyu, alho e gengibre, que proporcionam um sabor marcante e equilibrado. Acompanha um cremoso purê de batata salsa e uma seleção de legumes salteados, trazendo textura, cor e ainda mais sabor ao prato.",
           "disponivel": true,
           "foto": "produtos/mignon-suino-oriental/images/principal.jpg",
-          "link": "https://saborcuritiba.com.br/produtos/mignon-suino-oriental/index.html",
+          "link": "https://saborcuritiba.com.br/produtos/mignon-suino-oriental/",
           "ingredientes": [
             "Mignon suíno",
             "Batata salsa",
@@ -124,7 +124,7 @@
           "descricao": "Suculento picadinho de carne bovina preparado ao molho de vinho e cogumelos, combinando sabores marcantes e uma textura macia em cada garfada. Acompanha arroz soltinho, feijão e farofa crocante, trazendo toda a tradição de um clássico da cozinha brasileira com a praticidade que o seu dia a dia pede.",
           "disponivel": true,
           "foto": "produtos/picadinho-carne-vinho/images/principal.jpg",
-          "link": "https://saborcuritiba.com.br/produtos/picadinho-carne-vinho/index.html",
+          "link": "https://saborcuritiba.com.br/produtos/picadinho-carne-vinho/",
           "ingredientes": [
             "Carne bovina",
             "Arroz parboilizado",
@@ -162,7 +162,7 @@
           "descricao": "Frango marinado na mostarda e grelhado, combinando suculência, maciez e um toque especial que valoriza a receita. Acompanha arroz com brócolis e feijão, reunindo os sabores de um prato clássico do dia a dia com toda a praticidade que a sua rotina pede.",
           "disponivel": true,
           "foto": "produtos/frango-na-mostarda/images/principal.jpg",
-          "link": "https://saborcuritiba.com.br/produtos/frango-na-mostarda/index.html",
+          "link": "https://saborcuritiba.com.br/produtos/frango-na-mostarda/",
           "ingredientes": [
             "Peito de frango",
             "Arroz parboilizado",
