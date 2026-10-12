@@ -1,6 +1,7 @@
 (function ($) {
   // Constante da URL para o envio via POST do pedido (ajuste conforme necessário)
-  const URL_API_PEDIDO = "https://seu-servidor-ou-webhook.com/api/pedidos";
+  const URL_API_PEDIDO =
+    "https://n8n.saborcuritiba.com.br/webhook/checkout-pedido";
 
   // Tabela completa de frete por Bairro de Curitiba (Chave: ID do <select>, Valor: Valor do Frete em R$)
   const FRETE_POR_BAIRRO = {
@@ -375,11 +376,33 @@
         return;
       }
 
+      const nome = $("#checkout-nome").val().trim();
+      const whatsapp = $("#checkout-whatsapp").val().trim();
       const regiao = $("#checkout-municipio").val();
       const bairro = $("#checkout-bairro").val();
       const endereco = $("#checkout-endereco").val().trim();
       const numero = $("#checkout-numero").val().trim();
       const cep = $("#checkout-cep").val().trim();
+
+      if (!nome) {
+        this.notificar(
+          "warning",
+          "Campo Obrigatório",
+          "Por favor, informe seu nome.",
+        );
+        $("#checkout-nome").focus();
+        return;
+      }
+
+      if (!whatsapp) {
+        this.notificar(
+          "warning",
+          "Campo Obrigatório",
+          "Por favor, informe seu WhatsApp para contato.",
+        );
+        $("#checkout-whatsapp").focus();
+        return;
+      }
 
       if (!regiao) {
         this.notificar(
@@ -577,6 +600,10 @@
       const valorTotal = subtotal + valorFrete;
 
       const dadosPedido = {
+        cliente: {
+          nome: $("#checkout-nome").val().trim(),
+          whatsapp: $("#checkout-whatsapp").val().trim(),
+        },
         itens: cart.map((item) => ({
           id: item.id,
           nome: item.nome,

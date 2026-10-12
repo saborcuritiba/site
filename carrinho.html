@@ -396,11 +396,6 @@
                     Refeiçoes práticas para seu dia a dia.
                   </h5>
                   <hr class="space s" />
-                  <!--
-                  <a href="#cardapio" class="btn btn-border btn-sm anima">
-                    VER CARDÁPIO
-                  </a>
-                  -->
                 </div>
               </div>
             </div>
@@ -613,6 +608,25 @@
 
                 <form id="checkout-form">
                   <div id="conteudo-endereco">
+                    <!-- NOVOS CAMPOS: NOME E WHATSAPP -->
+                    <div class="form-group" style="margin-bottom: 12px">
+                      <input
+                        type="text"
+                        id="checkout-nome"
+                        class="form-control cart-form-control"
+                        placeholder="Nome completo"
+                      />
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 12px">
+                      <input
+                        type="text"
+                        id="checkout-whatsapp"
+                        class="form-control cart-form-control"
+                        placeholder="WhatsApp (com DDD)"
+                      />
+                    </div>
+
                     <!-- SELECT DE MUNICÍPIO / REGIÃO METROPOLITANA -->
                     <div class="form-group" style="margin-bottom: 12px">
                       <select
@@ -939,7 +953,6 @@
     <!-- FIM SESSAO FOOTER -->
 
     <!-- Modal de Confirmação de Pedido -->
-
     <style>
       /* Estilização limpa para a modal customizada */
       .custom-modal-overlay {
