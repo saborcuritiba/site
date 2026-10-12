@@ -1,15 +1,81 @@
 {
   "promocoes": [
     {
-      "nome": "Frete grátis",
-      "descricao": "Entrega gratuita para pedidos acima de 10 marmitas.",
-      "regras": "Válido apenas para Curitiba, Fazenda Rio Grande e São José dos Pinhais."
+      "nome": "Frete progressivo",
+      "descricao": "Cada marmita adicionada garante R$ 1 de desconto no frete.",
+      "regras": "O valor do frete varia conforme a região de entrega e o desconto é acumulativo de acordo com a quantidade de marmitas no pedido."
     }
   ],
   "categorias": [
     {
       "nome": "Linha Dia a Dia",
       "produtos": [
+        {
+          "id": "estrogonofe_frango_01",
+          "nome": "Estrogonofe de Frango com Arroz",
+          "preco": 22.90,
+          "descricao": "Cremoso e suculento estrogonofe de peito de frango selecionado, preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e um toque especial de especiarias. Acompanha arroz branquinho e soltinho, trazendo o aconchego e o sabor inconfundível da comida caseira com toda a praticidade que você precisa.",
+          "disponivel": true,
+          "foto": "produtos/estrogonofe-de-frango/images/principal.jpg",
+          "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-frango/index.html",
+          "ingredientes": [
+            "Peito de frango",
+            "Arroz",
+            "Cebola",
+            "Extrato de tomate",
+            "Creme de leite",
+            "Catchup",
+            "Mostarda",
+            "Cogumelo Paris (Agaricus bisporus)",
+            "Alho-poró",
+            "Alho",
+            "Molho inglês",
+            "Óleo de soja",
+            "Páprica doce",
+            "Pimenta-do-reino",
+            "Sal"
+          ],
+          "alergenicos": [
+            "Contém leite e derivados",
+            "Pode conter soja, trigo e ovos",
+            "Contém lactose",
+            "Contém glúten"
+          ],
+          "peso": "300g"
+        },
+        {
+          "id": "estrogonofe_carne_01",
+          "nome": "Estrogonofe de Carne com Arroz",
+          "preco": 24.90,
+          "descricao": "Cremoso e suculento estrogonofe de carne bovina (patinho) preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e um toque equilibrado de temperos. Acompanha arroz branquinho e soltinho, trazendo o aconchego do clássico estrogonofe caseiro com toda a praticidade que você precisa no dia a dia.",
+          "disponivel": true,
+          "foto": "produtos/estrogonofe-de-carne/images/principal.jpg",
+          "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-carne/index.html",
+          "ingredientes": [
+            "Carne bovina (patinho)",
+            "Arroz",
+            "Cebola",
+            "Extrato de tomate",
+            "Creme de leite",
+            "Catchup",
+            "Mostarda",
+            "Cogumelo Paris (Agaricus bisporus)",
+            "Alho-poró",
+            "Alho",
+            "Molho inglês",
+            "Óleo de soja",
+            "Páprika doce",
+            "Pimenta-do-reino",
+            "Sal"
+          ],
+          "alergenicos": [
+            "Contém derivados do leite",
+            "Pode conter soja, trigo e ovos",
+            "Contém lactose",
+            "Contém glúten"
+          ],
+          "peso": "300g"
+        },
         {
           "id": "mignon_suino_01",
           "nome": "Mignon Suíno Oriental",
