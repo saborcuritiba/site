@@ -69,35 +69,29 @@
     // Adiciona produto buscando pelo ID explícito do JSON
     addItem: function (productId) {
       if (cardapioCache.length === 0) {
-        $.ajax({
-          url: "/json/cardapio.json",
-          async: false,
-          dataType: "json",
-          success: function (data) {
-            cardapioCache = [];
-            data.categorias.forEach((cat) => {
-              cat.produtos.forEach((prod) => {
-                cardapioCache.push(prod);
-              });
-            });
-          },
-          error: function () {
-            // Fallback caso a busca síncrona precise subir pastas
-            $.ajax({
-              url: "../../json/cardapio.json",
-              async: false,
-              dataType: "json",
-              success: function (data) {
-                cardapioCache = [];
+        const paths = [
+          "/json/cardapio.json",
+          "../../json/cardapio.json",
+          "../json/cardapio.json",
+        ];
+        for (let i = 0; i < paths.length; i++) {
+          $.ajax({
+            url: paths[i],
+            async: false,
+            dataType: "json",
+            success: function (data) {
+              cardapioCache = [];
+              if (data.categorias) {
                 data.categorias.forEach((cat) => {
                   cat.produtos.forEach((prod) => {
                     cardapioCache.push(prod);
                   });
                 });
-              },
-            });
-          },
-        });
+              }
+            },
+          });
+          if (cardapioCache.length > 0) break;
+        }
       }
 
       const produto = cardapioCache.find((p) => p.id === productId);
@@ -111,7 +105,6 @@
       let cart = $.SaborCart.getCart();
       const index = cart.findIndex((item) => item.id === produto.id);
 
-      // Garante o caminho absoluto começando com barra para o domínio próprio
       let fotoPath = produto.foto.startsWith("/")
         ? produto.foto
         : "/" + produto.foto;
@@ -183,14 +176,14 @@
         } else {
           cart.forEach((item) => {
             const itemHtml = `
-                            <li class="cart-item">
-                                <img src="${item.foto}" alt="${item.nome}" onerror="this.src='/images/logo_retangular.png'" />
-                                <div class="cart-content">
-                                    <h5>${item.nome}</h5>
-                                    <span class="cart-quantity"> ${item.quantidade} x R$ ${item.preco.toFixed(2).replace(".", ",")} </span>
-                                </div>
-                            </li>
-                        `;
+              <li class="cart-item">
+                <img src="${item.foto}" alt="${item.nome}" onerror="this.src='/images/logo_retangular.png'" />
+                <div class="cart-content">
+                  <h5>${item.nome}</h5>
+                  <span class="cart-quantity"> ${item.quantidade} x R$ ${item.preco.toFixed(2).replace(".", ",")} </span>
+                </div>
+              </li>
+            `;
             $shopCartList.append(itemHtml);
           });
         }
@@ -205,11 +198,13 @@
   $(document).ready(function () {
     $.SaborCart.init();
 
-    // Listener global blindado para os botões de adicionar ao carrinho (evita duplicação)
+    // Listener global blindado para os botões de adicionar ao carrinho
     $(document)
       .off("click", ".btn-comprar")
       .on("click", ".btn-comprar", function (e) {
         e.preventDefault();
+        e.stopImmediatePropagation(); // Mata a propagação para evitar o redirecionamento do card pai
+        e.stopPropagation();
 
         const $btn = $(this);
         if ($btn.data("processing")) return;
@@ -236,7 +231,7 @@
         $cartMenu.stop(true, true).fadeIn(150);
       } else {
         $cartMenu.stop(true, true).fadeOut(150, function () {
-          $(this).attr("style", ""); // Limpa o display:none do jQuery para liberar o hover
+          $(this).attr("style", "");
         });
       }
     });
@@ -252,14 +247,9 @@
         $(".shop-menu")
           .removeClass("is-active")
           .fadeOut(150, function () {
-            $(this).attr("style", ""); // Limpa o display:none do jQuery para liberar o hover
+            $(this).attr("style", "");
           });
       }
-    });
-
-    // Impede que cliques na parte interna da caixa do carrinho fechem o dropdown no desktop/mobile
-    $(document).on("click", ".shop-menu", function (e) {
-      e.stopPropagation();
     });
   });
 })(jQuery);

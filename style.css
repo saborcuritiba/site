@@ -7051,3 +7051,15 @@ html.iex .img-box img {
 .shop-cart .cart-item:hover {
   border-bottom: 1px solid #d8d8d8 !important;
 }
+
+
+/* Cria um sombreado/degradê escuro na parte inferior da foto para destacar o texto branco */
+.sabor-carrossel-produtos .swiper-slide .img-box img {
+  filter: brightness(0.9); /* Escurece de leve a foto inteira */
+}
+
+/* OU um overlay degradê na caption/imagem */
+.sabor-carrossel-produtos .swiper-slide .img-box .caption {
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  color: #ffffff !important;
+}
