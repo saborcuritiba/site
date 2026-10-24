@@ -57,7 +57,7 @@
               <h2 style="font-size: 18px; margin-bottom: 8px;">${produto.nome}</h2>
               <p style="
                 display: -webkit-box;
-                -webkit-line-clamp: 2;
+                -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -68,7 +68,7 @@
           </div>
 
           <div style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 12px;">
-            <span style="font-size: 18px; font-weight: bold; color: #ffffff;">
+            <span style="font-size: 20px; font-weight: bold; color: #ffffff;">
               R$ ${precoFormatado}
             </span>
 
@@ -96,7 +96,7 @@
     `;
   }
 
-  // 2. Layout Clássico Original para os Cards Fixos de Cima
+  // 2. Layout Clássico Original para os Cards Fixos de Cima (Também atualizado com 3 linhas e preço em destaque)
   function gerarCardFixoHtml(produto) {
     let fotoPath = produto.foto.startsWith("/")
       ? produto.foto
@@ -133,8 +133,14 @@
         >
           <div class="caption">
             <h2>${produto.nome}</h2>
-            <span class="extra-content"> R$ ${precoFormatado} </span>
-            <p>${descricaoCurta}</p>
+            <span class="extra-content" style="font-size: 18px; font-weight: bold; color: #ffffff;"> R$ ${precoFormatado} </span>
+            <p style="
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            ">${descricaoCurta}</p>
             <p class="sub">${linhaTag}</p>
           </div>
         </a>
