@@ -20,7 +20,11 @@
           "imagens": [
             "produtos/estrogonofe-de-frango/images/carrossel_01.jpg",
             "produtos/estrogonofe-de-frango/images/carrossel_02.jpg",
-            "produtos/estrogonofe-de-frango/images/carrossel_03.jpg"
+            "produtos/estrogonofe-de-frango/images/carrossel_03.jpg",
+            "produtos/estrogonofe-de-frango/images/carrossel_04.jpg",
+            "produtos/estrogonofe-de-frango/images/carrossel_05.jpg",
+            "produtos/estrogonofe-de-frango/images/carrossel_06.jpg",
+            "produtos/estrogonofe-de-frango/images/carrossel_07.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-frango/",
           "ingredientes": [
@@ -50,6 +54,7 @@
         },
         {
           "id": "estrogonofe_carne_01",
+          "ativo": true,
           "nome": "Estrogonofe de Carne com Arroz",
           "preco": 31.28,
           "descricao": "Cremoso e suculento estrogonofe de carne bovina (patinho) preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e um toque equilibrado de temperos. Acompanha arroz branquinho e soltinho, trazendo o aconchego do clássico estrogonofe caseiro com toda a praticidade que você precisa no dia a dia.",
@@ -58,7 +63,9 @@
           "imagens": [
             "produtos/estrogonofe-de-carne/images/carrossel_01.jpg",
             "produtos/estrogonofe-de-carne/images/carrossel_02.jpg",
-            "produtos/estrogonofe-de-carne/images/carrossel_03.jpg"
+            "produtos/estrogonofe-de-carne/images/carrossel_03.jpg",
+            "produtos/estrogonofe-de-carne/images/carrossel_04.jpg",
+            "produtos/estrogonofe-de-carne/images/carrossel_05.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-carne/",
           "ingredientes": [
@@ -96,7 +103,9 @@
           "imagens": [
             "produtos/mignon-suino-oriental/images/carrossel_01.jpg",
             "produtos/mignon-suino-oriental/images/carrossel_02.jpg",
-            "produtos/mignon-suino-oriental/images/carrossel_03.jpg"
+            "produtos/mignon-suino-oriental/images/carrossel_03.jpg",
+            "produtos/mignon-suino-oriental/images/carrossel_04.jpg",
+            "produtos/mignon-suino-oriental/images/carrossel_05.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/mignon-suino-oriental/",
           "ingredientes": [
@@ -142,7 +151,9 @@
           "imagens": [
             "produtos/picadinho-carne-vinho/images/carrossel_01.jpg",
             "produtos/picadinho-carne-vinho/images/carrossel_02.jpg",
-            "produtos/picadinho-carne-vinho/images/carrossel_03.jpg"
+            "produtos/picadinho-carne-vinho/images/carrossel_03.jpg",
+            "produtos/picadinho-carne-vinho/images/carrossel_04.jpg",
+            "produtos/picadinho-carne-vinho/images/carrossel_05.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/picadinho-carne-vinho/",
           "ingredientes": [
@@ -187,7 +198,8 @@
             "produtos/frango-na-mostarda/images/carrossel_02.jpg",
             "produtos/frango-na-mostarda/images/carrossel_03.jpg",
             "produtos/frango-na-mostarda/images/carrossel_04.jpg",
-            "produtos/frango-na-mostarda/images/carrossel_05.jpg"
+            "produtos/frango-na-mostarda/images/carrossel_05.jpg",
+            "produtos/frango-na-mostarda/images/carrossel_06.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/frango-na-mostarda/",
           "ingredientes": [
