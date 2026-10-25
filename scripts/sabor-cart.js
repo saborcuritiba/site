@@ -16,7 +16,7 @@
           preventDuplicates: false,
           showDuration: "300",
           hideDuration: "1000",
-          timeOut: "25000",
+          timeOut: "3000",
           extendedTimeOut: "2000",
           showEasing: "swing",
           hideEasing: "linear",
@@ -128,9 +128,9 @@
         var msgToast =
           "<b>" +
           produto.nome +
-          "</b> foi inserido com sucesso no seu carrinho.<br><br>" +
+          "</b> está no seu carrinho.<br><br>" +
           "<a href='../../carrinho.html' style='color: #ffffff; background-color: #436541; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: bold; display: inline-block;'>Ver Carrinho &rarr;</a>";
-        toastr.success(msgToast, "Produto adicionado ao carrinho");
+        toastr.success(msgToast, "Adicionado ao carrinho");
       }
     },
 
