@@ -14,7 +14,7 @@
           "id": "estrogonofe_frango_01",
           "nome": "Estrogonofe de Frango com Arroz",
           "preco": 23.90,
-          "descricao": "Cremoso e suculento estrogonofe de peito de frango selecionado, preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e um toque especial de especiarias. Acompanha arroz branquinho e soltinho, trazendo o aconchego e o sabor inconfundível da comida caseira com toda a praticidade que você precisa.",
+          "descricao": "Cremoso e suculento estrogonofe de peito de frango, preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e tempero especial da Sabor Curitiba. Acompanha arroz branco e soltinho, com um toque de alho poró,trazendo o aconchego e o sabor inconfundível da comida caseira com toda a praticidade que você precisa.",
           "disponivel": true,
           "foto": "produtos/estrogonofe-de-frango/images/principal.jpg",
           "imagens": [
@@ -57,7 +57,7 @@
           "ativo": true,
           "nome": "Estrogonofe de Carne com Arroz",
           "preco": 29.90,
-          "descricao": "Cremoso e suculento estrogonofe de carne bovina (patinho) preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e um toque equilibrado de temperos. Acompanha arroz branquinho e soltinho, trazendo o aconchego do clássico estrogonofe caseiro com toda a praticidade que você precisa no dia a dia.",
+          "descricao": "Cremoso e suculento estrogonofe de carne bovina (patinho) preparado com cogumelos frescos, creme de leite, extrato de tomate e um toque equilibrado de temperos. Acompanha arroz branco e soltinho, com um toque de alho poró, trazendo o aconchego do clássico estrogonofe caseiro com toda a praticidade que você precisa no dia a dia.",
           "disponivel": true,
           "foto": "produtos/estrogonofe-de-carne/images/principal.jpg",
           "imagens": [
