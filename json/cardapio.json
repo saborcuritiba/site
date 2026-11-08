@@ -14,7 +14,7 @@
           "id": "estrogonofe_frango_01",
           "nome": "Estrogonofe de Frango com Arroz",
           "preco": 23.90,
-          "descricao": "Cremoso e suculento estrogonofe de peito de frango, preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e tempero especial da Sabor Curitiba. Acompanha arroz branco e soltinho, com um toque de alho poró,trazendo o aconchego e o sabor inconfundível da comida caseira com toda a praticidade que você precisa.",
+          "descricao": "Cremoso e suculento estrogonofe de peito de frango, preparado com cogumelos Paris frescos, creme de leite, extrato de tomate e tempero especial da Sabor Curitiba. Acompanha arroz branco e soltinho, com um toque de alho poró, trazendo o aconchego e o sabor inconfundível da comida caseira com toda a praticidade que você precisa.",
           "disponivel": true,
           "foto": "produtos/estrogonofe-de-frango/images/principal.jpg",
           "imagens": [
@@ -27,6 +27,17 @@
             "produtos/estrogonofe-de-frango/images/carrossel_07.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-frango/",
+          "peso": "300g",
+          "montagem_prato": [
+            {
+              "item": "Estrogonofe de frango",
+              "peso": "150g"
+            },
+            {
+              "item": "Arroz de alho-poró",
+              "peso": "150g"
+            }
+          ],
           "ingredientes": [
             "Peito de frango",
             "Arroz",
@@ -49,8 +60,7 @@
             "Pode conter soja, trigo e ovos",
             "Contém lactose",
             "Contém glúten"
-          ],
-          "peso": "300g"
+          ]
         },
         {
           "id": "estrogonofe_carne_01",
@@ -68,6 +78,17 @@
             "produtos/estrogonofe-de-carne/images/carrossel_05.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/estrogonofe-de-carne/",
+          "peso": "300g",
+          "montagem_prato": [
+            {
+              "item": "Estrogonofe de carne",
+              "peso": "150g"
+            },
+            {
+              "item": "Arroz de alho-poró",
+              "peso": "150g"
+            }
+          ],
           "ingredientes": [
             "Carne bovina (patinho)",
             "Arroz",
@@ -90,8 +111,7 @@
             "Pode conter soja, trigo e ovos",
             "Contém lactose",
             "Contém glúten"
-          ],
-          "peso": "300g"
+          ]
         },
         {
           "id": "mignon_suino_01",
@@ -108,6 +128,21 @@
             "produtos/mignon-suino-oriental/images/carrossel_05.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/mignon-suino-oriental/",
+          "peso": "370g",
+          "montagem_prato": [
+            {
+              "item": "Mignon suíno",
+              "peso": "120g"
+            },
+            {
+              "item": "Legumes salteados",
+              "peso": "100g"
+            },
+            {
+              "item": "Purê de batata salsa",
+              "peso": "150g"
+            }
+          ],
           "ingredientes": [
             "Mignon suíno",
             "Batata salsa",
@@ -138,8 +173,7 @@
             "Contém derivados de soja e trigo",
             "Contém lactose",
             "Contém glúten"
-          ],
-          "peso": "370g"
+          ]
         },
         {
           "id": "picadinho_carne_02",
@@ -156,6 +190,25 @@
             "produtos/picadinho-carne-vinho/images/carrossel_05.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/picadinho-carne-vinho/",
+          "peso": "350g",
+          "montagem_prato": [
+            {
+              "item": "Picadinho de carne bovina",
+              "peso": "100g"
+            },
+            {
+              "item": "Arroz",
+              "peso": "100g"
+            },
+            {
+              "item": "Feijão preto",
+              "peso": "100g"
+            },
+            {
+              "item": "Farofa de milho",
+              "peso": "50g"
+            }
+          ],
           "ingredientes": [
             "Carne bovina",
             "Arroz parboilizado",
@@ -183,8 +236,7 @@
             "Contém lactose",
             "Contém glúten",
             "Pode conter glúten proveniente de contato com outros ingredientes"
-          ],
-          "peso": "350g"
+          ]
         },
         {
           "id": "frango_mostarda_03",
@@ -202,6 +254,21 @@
             "produtos/frango-na-mostarda/images/carrossel_06.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/frango-na-mostarda/",
+          "peso": "350g",
+          "montagem_prato": [
+            {
+              "item": "Frango na mostarda",
+              "peso": "120g"
+            },
+            {
+              "item": "Feijão carioca",
+              "peso": "100g"
+            },
+            {
+              "item": "Arroz com brócolis",
+              "peso": "130g"
+            }
+          ],
           "ingredientes": [
             "Peito de frango",
             "Arroz parboilizado",
@@ -221,8 +288,7 @@
             "Contém derivados de soja",
             "Contém glúten",
             "Pode conter: trigo, cevada, ovo e amendoim"
-          ],
-          "peso": "350g"
+          ]
         },
         {
           "id": "fusilli_bolonhesa_01",
@@ -239,6 +305,17 @@
             "produtos/fusilli-a-bolonhesa/images/carrossel_05.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/fusilli-a-bolonhesa/",
+          "peso": "350g",
+          "montagem_prato": [
+            {
+              "item": "Macarrão fusilli (parafuso)",
+              "peso": "200g"
+            },
+            {
+              "item": "Molho Bolonhesa",
+              "peso": "150g"
+            }
+          ],
           "ingredientes": [
             "Macarrão Fusilli (Parafuso)",
             "Patinho bovino moído",
@@ -259,8 +336,7 @@
             "Contém derivados de trigo, ovos e leite",
             "Contém glúten",
             "Contém lactose"
-          ],
-          "peso": "350g"
+          ]
         },
         {
           "id": "penne_molho_queijo_nozes_01",
@@ -277,6 +353,17 @@
             "produtos/penne-ao-molho-de-queijo-com-nozes/images/carrossel_05.jpg"
           ],
           "link": "https://saborcuritiba.com.br/produtos/penne-ao-molho-de-queijo-com-nozes/",
+          "peso": "350g",
+          "montagem_prato": [
+            {
+              "item": "Macarrão Penne",
+              "peso": "200g"
+            },
+            {
+              "item": "Molho de queijo com nozes",
+              "peso": "150g"
+            }
+          ],
           "ingredientes": [
             "Macarrão Penne",
             "Leite integral",
@@ -294,11 +381,10 @@
             "Pimenta-do-reino"
           ],
           "alergenicos": [
-            "Contém nozes e derivados de trigo, ovos e leite ",
+            "Contém nozes e derivados de trigo, ovos e leite",
             "Contém glúten",
             "Contém lactose"
-          ],
-          "peso": "350g"
+          ]
         }
       ]
     }
