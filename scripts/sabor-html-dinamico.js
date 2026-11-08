@@ -33,8 +33,8 @@
     callback(cardapioCache);
   }
 
-  // 1. Layout do Carrossel (Moderno com botão de compra)
-  function gerarCardCarrosselHtml(produto) {
+  // 1. Layout do Carrossel (Moderno com controle opcional do botão de compra)
+  function gerarCardCarrosselHtml(produto, exibirComprar = true) {
     let fotoPath = produto.foto.startsWith("/")
       ? produto.foto
       : "/" + produto.foto;
@@ -42,6 +42,44 @@
     let urlDetalhes = produto.link || `produtos/${produto.id}/index.html`;
     let descricaoCurta = produto.descricao || "";
     let linhaTag = produto.linha || produto.linhaNome || "Linha Dia a Dia";
+
+    // Bloco do rodapé do card (Preço e Botão de Comprar condicional)
+    let rodapeCardHtml = "";
+    if (exibirComprar) {
+      rodapeCardHtml = `
+        <div style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 12px;">
+          <span style="font-size: 20px; font-weight: bold; color: #ffffff;">
+            R$ ${precoFormatado}
+          </span>
+
+          <button
+            type="button"
+            class="btn btn-primary btn-comprar"
+            data-id="${produto.id}"
+            onclick="event.stopPropagation(); event.preventDefault(); $.SaborCart.addItem('${produto.id}'); return false;"
+            style="
+              background-color: #436541;
+              border-color: #436541;
+              color: #ffffff;
+              padding: 8px 16px;
+              font-weight: bold;
+              border-radius: 4px;
+              cursor: pointer;
+            "
+          >
+            <i class="im-shop-3" style="margin-right: 6px"></i>Comprar
+          </button>
+        </div>
+      `;
+    } else {
+      rodapeCardHtml = `
+        <div style="margin-top: 15px; display: flex; align-items: center; justify-content: flex-start; position: relative; z-index: 10; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 12px;">
+          <span style="font-size: 20px; font-weight: bold; color: #ffffff;">
+            R$ ${precoFormatado}
+          </span>
+        </div>
+      `;
+    }
 
     return `
       <div class="img-box adv-img adv-img-half-content" data-anima="fade-left" data-trigger="hover" style="height: 100%; display: flex; flex-direction: column;">
@@ -67,36 +105,14 @@
             </a>
           </div>
 
-          <div style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 12px;">
-            <span style="font-size: 20px; font-weight: bold; color: #ffffff;">
-              R$ ${precoFormatado}
-            </span>
-
-            <button
-              type="button"
-              class="btn btn-primary btn-comprar"
-              data-id="${produto.id}"
-              onclick="event.stopPropagation(); event.preventDefault(); $.SaborCart.addItem('${produto.id}'); return false;"
-              style="
-                background-color: #436541;
-                border-color: #436541;
-                color: #ffffff;
-                padding: 8px 16px;
-                font-weight: bold;
-                border-radius: 4px;
-                cursor: pointer;
-              "
-            >
-              <i class="im-shop-3" style="margin-right: 6px"></i>Comprar
-            </button>
-          </div>
+          ${rodapeCardHtml}
 
         </div>
       </div>
     `;
   }
 
-  // 2. Layout Clássico Original para os Cards Fixos de Cima (Também atualizado com 3 linhas e preço em destaque)
+  // 2. Layout Clássico Original para os Cards Fixos de Cima
   function gerarCardFixoHtml(produto) {
     let fotoPath = produto.foto.startsWith("/")
       ? produto.foto
@@ -306,7 +322,6 @@
         </div>
       `);
 
-      // Configurado estritamente para 3 itens no desktop
       setTimeout(function () {
         if (typeof Swiper !== "undefined") {
           new Swiper($el.find(".produtoDetalheSwiperInstance")[0], {
@@ -348,13 +363,18 @@
 
     carregarCardapio(function (produtos) {
       if ($containersCarrossel.length) {
-        let slidesHtml = "";
-        produtos.forEach((produto) => {
-          slidesHtml += `<div class="swiper-slide">${gerarCardCarrosselHtml(produto)}</div>`;
-        });
-
         $containersCarrossel.each(function () {
           const $container = $(this);
+
+          // Verifica o atributo data-exibir-comprar no elemento HTML (padrão é true se não informado)
+          let exibirComprarAttr = $container.attr("data-exibir-comprar");
+          let exibirComprar = exibirComprarAttr !== "false";
+
+          let slidesHtml = "";
+          produtos.forEach((produto) => {
+            slidesHtml += `<div class="swiper-slide">${gerarCardCarrosselHtml(produto, exibirComprar)}</div>`;
+          });
+
           $container.html(`
             <div class="swiper productSwiperInstance">
               <div class="swiper-wrapper">
