@@ -223,6 +223,82 @@
             "Pode conter: trigo, cevada, ovo e amendoim"
           ],
           "peso": "350g"
+        },
+        {
+          "id": "fusilli_bolonhesa_01",
+          "nome": "Fusilli à Bolonhesa",
+          "preco": 19.90,
+          "descricao": "Saborosa massa fusilli (parafuso) acompanhada de um rico e bem temperado molho à bolonhesa com patinho bovino moído, tomates selecionados e ervas aromáticas. Uma opção prática e reconfortante para a sua refeição.",
+          "disponivel": true,
+          "foto": "produtos/fusilli-a-bolonhesa/images/principal.jpg",
+          "imagens": [
+            "produtos/fusilli-a-bolonhesa/images/carrossel_01.jpg",
+            "produtos/fusilli-a-bolonhesa/images/carrossel_02.jpg",
+            "produtos/fusilli-a-bolonhesa/images/carrossel_03.jpg",
+            "produtos/fusilli-a-bolonhesa/images/carrossel_04.jpg",
+            "produtos/fusilli-a-bolonhesa/images/carrossel_05.jpg"
+          ],
+          "link": "https://saborcuritiba.com.br/produtos/fusilli-a-bolonhesa/",
+          "ingredientes": [
+            "Macarrão Fusilli (Parafuso)",
+            "Patinho bovino moído",
+            "Tomate",
+            "Molho de tomate",
+            "Extrato de tomate",
+            "Cebola",
+            "Cenoura",
+            "Alho",
+            "Óleo de soja",
+            "Sal",
+            "Orégano",
+            "Queijo parmesão",
+            "Pimenta-do-reino",
+            "Louro"
+          ],
+          "alergenicos": [
+            "Contém derivados de trigo, ovos e leite",
+            "Contém glúten",
+            "Contém lactose"
+          ],
+          "peso": "350g"
+        },
+        {
+          "id": "penne_molho_queijo_nozes_01",
+          "nome": "Penne ao Molho de Queijo com Nozes",
+          "preco": 18.90,
+          "descricao": "Delicioso macarrão penne envolvido em um cremoso molho de queijos muçarela e parmesão, finalizado com o toque especial e a crocância das nozes. Um prato sofisticado e perfeito para o dia a dia.",
+          "disponivel": true,
+          "foto": "produtos/penne-ao-molho-de-queijo-com-nozes/images/principal.jpg",
+          "imagens": [
+            "produtos/penne-ao-molho-de-queijo-com-nozes/images/carrossel_01.jpg",
+            "produtos/penne-ao-molho-de-queijo-com-nozes/images/carrossel_02.jpg",
+            "produtos/penne-ao-molho-de-queijo-com-nozes/images/carrossel_03.jpg",
+            "produtos/penne-ao-molho-de-queijo-com-nozes/images/carrossel_04.jpg",
+            "produtos/penne-ao-molho-de-queijo-com-nozes/images/carrossel_05.jpg"
+          ],
+          "link": "https://saborcuritiba.com.br/produtos/penne-ao-molho-de-queijo-com-nozes/",
+          "ingredientes": [
+            "Macarrão Penne",
+            "Leite integral",
+            "Creme de leite",
+            "Queijo muçarela",
+            "Queijo parmesão",
+            "Nozes",
+            "Manteiga",
+            "Farinha de trigo",
+            "Amido de milho",
+            "Cebola",
+            "Alho",
+            "Sal",
+            "Noz-moscada",
+            "Pimenta-do-reino"
+          ],
+          "alergenicos": [
+            "Contém nozes e derivados de trigo, ovos e leite",
+            "Contém glúten",
+            "Contém lactose"
+          ],
+          "peso": "350g"
         }
       ]
     }
