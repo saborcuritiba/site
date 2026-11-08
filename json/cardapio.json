@@ -228,7 +228,7 @@
           "id": "fusilli_bolonhesa_01",
           "nome": "Fusilli à Bolonhesa",
           "preco": 19.90,
-          "descricao": "Saborosa massa fusilli (parafuso) acompanhada de um rico e bem temperado molho à bolonhesa com patinho bovino moído, tomates selecionados e ervas aromáticas. Uma opção prática e reconfortante para a sua refeição.",
+          "descricao": "Saborosa massa fusilli (parafuso) acompanhada de um rico e bem temperado molho à bolonhesa com patinho bovino moído. Uma opção prática e reconfortante para a sua refeição.",
           "disponivel": true,
           "foto": "produtos/fusilli-a-bolonhesa/images/principal.jpg",
           "imagens": [
@@ -266,7 +266,7 @@
           "id": "penne_molho_queijo_nozes_01",
           "nome": "Penne ao Molho de Queijo com Nozes",
           "preco": 18.90,
-          "descricao": "Delicioso macarrão penne envolvido em um cremoso molho de queijos muçarela e parmesão, finalizado com o toque especial e a crocância das nozes. Um prato sofisticado e perfeito para o dia a dia.",
+          "descricao": "Delicioso macarrão penne envolvido em um cremoso molho de queijos muçarela e parmesão, finalizado com o toque especial e a crocância das nozes.",
           "disponivel": true,
           "foto": "produtos/penne-ao-molho-de-queijo-com-nozes/images/principal.jpg",
           "imagens": [
