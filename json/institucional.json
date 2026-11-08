@@ -2,8 +2,8 @@
   "empresa": {
     "nome": "Sabor Curitiba",
     "slogan": "Comida de Verdade",
-    "descricao": "Na Sabor Curitiba, fazemos comida de verdade: marmitas congeladas preparadas com ingredientes frescos e o melhor sabor da cidade. Utilizamos embalagens sustentáveis, biodegradáveis e livres de Bisfenol A (BPA-Free), garantindo total segurança para sua alimentação.",
-    "quem_somos": "Somos uma marmitaria especializada em refeições congeladas que unem sabor, equilíbrio e nutrição, com cardápio elaborado por nutricionista. Estamos localizados na Rua Alexandro Glenski, nº 815 – Ganchinho – Curitiba/PR (CEP 81.935-394). Trabalhamos exclusivamente com delivery próprio.",
+    "descricao": "Na Sabor Curitiba, fazemos comida de verdade: refeições congeladas preparadas com ingredientes frescos e o melhor sabor da cidade. Utilizamos embalagens sustentáveis, biodegradáveis e livres de Bisfenol A (BPA-Free), garantindo total segurança para sua alimentação.",
+    "quem_somos": "Somos uma empresa especializada em refeições congeladas que unem sabor, equilíbrio e nutrição, com cardápio elaborado por nutricionista. Nossa sede administrativa/centro de produção está localizada na Rua Alexandro Glenski, nº 815 – Ganchinho – Curitiba/PR (CEP 81.935-394). ATENÇÃO: Trabalhamos EXCLUSIVAMENTE com delivery próprio, sem atendimento ao público ou retirada de pedidos no local.",
     "diferenciais": [
       "Cardápio elaborado por nutricionista",
       "Embalagens biodegradáveis e BPA-Free (próprias para micro-ondas, forno e airfryer)",
@@ -15,7 +15,8 @@
     ],
     "modelo_atendimento": {
       "tipo": "Delivery",
-      "presencial": false
+      "presencial": false,
+      "retirada_no_local": false
     },
     "contato": {
       "sac": "(41) 99840-1944",
@@ -38,11 +39,11 @@
   "duvidas_frequentes": [
     {
       "pergunta": "Onde encontro a tabela nutricional das marmitas?",
-      "resposta": "Todas as informações nutricionais detalhadas (como calorias, carboidratos e proteínas) de cada prato estão disponíveis diretamente na página de cada marmita em nosso site oficial."
+      "resposta": "Todas as informações nutricionais detalhadas (como calorias, carboidratos e proteínas) de cada prato estão disponíveis diretamente na página de cada produto em nosso site oficial."
     },
     {
       "pergunta": "Como funcionam as marmitas? Elas vêm congeladas?",
-      "resposta": "Sim! Nossas marmitas são entregues congeladas, preparadas sem conservantes artificiais e com ingredientes frescos, prontas para você armazenar no freezer e aquecer quando preferir."
+      "resposta": "Sim! Nossas refeições práticas são entregues congeladas, preparadas sem conservantes artificiais e com ingredientes frescos, prontas para você armazenar no freezer e aquecer quando preferir."
     },
     {
       "pergunta": "Como faço para esquentar a marmita?",
@@ -54,15 +55,27 @@
     },
     {
       "pergunta": "Como é feita a entrega e qual o prazo?",
-      "resposta": "Realizamos entregas próprias em Curitiba e região. Os detalhes de agendamento e o valor do frete são informados no momento do fechamento do pedido pela nossa equipe ou diretamente através do nosso site oficial."
+      "resposta": "Realizamos entregas próprias em Curitiba e região. Após efetivar o pedido, basta aguardar: nossa equipe entrará em contato via WhatsApp para estipular a forma de pagamento (Pix na entrega ou no momento da confirmação) e agendar a entrega."
     },
     {
       "pergunta": "Quais são as formas de pagamento aceitas?",
-      "resposta": "Aceitamos PIX. As opções detalhadas são confirmadas durante o fechamento do seu pedido pelo site."
+      "resposta": "Trabalhamos com Pix. O pagamento é alinhado diretamente com a nossa equipe via WhatsApp no momento da confirmação do pedido ou na entrega."
     },
     {
       "pergunta": "As refeições contam com acompanhamento profissional?",
       "resposta": "Sim! Todo o nosso cardápio é cuidadosamente elaborado por nutricionista, garantindo equilíbrio, sabor e qualidade nutricional para o seu dia a dia."
+    },
+    {
+      "pergunta": "Qual é a validade das refeições congeladas?",
+      "resposta": "Nossas refeições possuem validade de até 120 dias quando mantidas continuamente congeladas no freezer."
+    },
+    {
+      "pergunta": "Posso alterar ou personalizar os ingredientes de um prato?",
+      "resposta": "Como nossos pratos são preparados em lotes artesanais padronizados para garantir o padrão de qualidade e a informação nutricional precisa, não conseguimos fazer alterações ou trocas de ingredientes individuais nas marmitas."
+    },
+    {
+      "pergunta": "Quais regiões de Curitiba vocês atendem?",
+      "resposta": "Atendemos Curitiba e regiões metropolitanas parceiras. Você pode verificar a cobertura exata para o seu CEP diretamente na etapa de checkout em nosso site."
     }
   ]
 }
