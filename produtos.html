@@ -854,7 +854,10 @@
             data.categorias.forEach(function (cat) {
               if (cat.produtos) {
                 cat.produtos.forEach(function (p) {
-                  produtos.push(p);
+                  // FILTRAGEM: Exibe se 'ativo' não for estritamente false (default é true/undefined)
+                  if (p.ativo !== false) {
+                    produtos.push(p);
+                  }
                 });
               }
             });

@@ -176,8 +176,9 @@
           ]
         },
         {
+          "ativo": false,
           "id": "picadinho_carne_02",
-          "nome": "Picadinho ao Vinho com Cogumelos",
+          "nome": "Picadinho de Carne ao Vinho com Cogumelos",
           "preco": 28.90,
           "descricao": "Suculento picadinho de carne bovina preparado ao molho de vinho e cogumelos, combinando sabores marcantes e uma textura macia em cada garfada. Acompanha arroz soltinho, feijão e farofa crocante, trazendo toda a tradição de um clássico da cozinha brasileira com a praticidade que o seu dia a dia pede.",
           "disponivel": true,
